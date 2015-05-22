@@ -1,0 +1,1 @@
+$shows = ('thing1', 'thing2');
