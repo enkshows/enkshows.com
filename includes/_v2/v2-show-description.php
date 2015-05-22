@@ -4,7 +4,7 @@
 // if any content editing needs to happen,
 // it should happen in the '_content-show-descriptions.php' file
 // nothing should be touched here
-include("../includes/_content/_content-show-descriptions.php");
+include($root . "/includes/_content/_content-show-descriptions.php");
 ?>
 
 <?php 

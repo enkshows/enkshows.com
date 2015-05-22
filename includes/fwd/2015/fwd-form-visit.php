@@ -2,7 +2,7 @@
  <h2>Visit our show</h2>
  <div class="desc-lg">
   To visit one of ENK’s shows, please begin the application process by choosing a show and completing the short form below
-  If you have questions during this process, please contact <a href="mailto:intermezzocollections@enkshows.com">intermezzocollections@enkshows.com</a> or call 212.951.6600.
+  If you have questions during this process, please contact please contact <a href="mailto:fwd@enkshows.com">fwd@enkshows.com</a> or call 310.857.7500.
 </div>
 <div class="module-content">
   <div id="visitor_form">
