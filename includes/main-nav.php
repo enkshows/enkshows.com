@@ -19,7 +19,7 @@
       <a href="/childrensclub" title="Childrens Club">Childrens Club</a> 
         <ul class="nav_third  cc-nav" id="navThirdcc" > </ul> </li>
     <li>
-      <a href="/enkvegas" title="ENKVegas" >ENKVEGAS</a>
+      <a href="/enkvegas" title="PROJECT WOMENS" >PROJECT WOMENS</a>
         <ul class="nav_third ev-nav" id="navThirdvegas " > </ul> </li>
     <li>
       <a href="/coterie" title="Fashion Coterie" >Coterie</a>
@@ -30,6 +30,10 @@
     <li>
       <a href="/tmrw" title="TMRW" id="tmr">TMRW</a>
         <ul class="nav_third tmrw-nav" id="navThirdtmrw "> </ul> </li>
+    <li>
+    <li>
+      <a href="/fwd" title="FWD" id="tmr">FWD</a>
+        <ul class="nav_third fwd-nav" id="navThirdtmrw "> </ul> </li>
     <li>
       <a href="http://www.shopthefloor.com/" title="Shop The Floor" target="_blank">Shop The Floor</a></li>
   </ul>

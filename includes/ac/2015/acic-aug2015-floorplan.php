@@ -13,7 +13,7 @@
         </ul>
       </nav>
       <div class="row-item item-two-third">
-        <img src="<?php echo IMG_CHILDRENS; ?>2014/mar/cc-mar2014-level2.png" width="520" border="0">
+        <img src="<?php echo IMG_ACIC; ?>2015/aug/acic-aug2015-level2.png" width="520" border="0">
         <a href="<?php echo PDF_ACIC; ?>2015/aug/acic-aug2015-exhibitor_map.pdf" target="_blank">
           <img src="<?php echo IMG_ACIC; ?>2015/aug/acic-aug2015-level1.png" width="520" border="0">
         </a>

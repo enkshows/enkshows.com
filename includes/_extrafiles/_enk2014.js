@@ -61,6 +61,9 @@ $(document).ready(function(){
      if ($('body').hasClass('ev')){
       $('.ev-nav').append('<li><a href="' + $link + '">' + $item.replace('-', ' + ') + '</a></li>');
      }
+     if ($('body').hasClass('fwd')){
+      $('.fwd-nav').append('<li><a href="' + $link + '">' + $item.replace('-', ' + ') + '</a></li>');
+     }
   };
 
   // local scroll for nav
