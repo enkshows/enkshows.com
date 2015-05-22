@@ -1,0 +1,19 @@
+October 23, 2012, 5:56 pm	CHILDRENSCLUB	rishi	go.rishi@gmail.com	Mirae Asset Global Investments (USA) LLC	123	Exhibitor	Sharma	2122222222	2122222222	technical marketing lead	123	123	123
+October 23, 2012, 5:58 pm	ACIC	123	123	123	123	Exhibitor	123	123	123	123	123	123	123
+October 23, 2012, 5:59 pm	ACIC	123	123	123	123	Exhibitor	123	123	123	123	123	123	123
+October 23, 2012, 6:00 pm	ACIC	123	123	123	123	Press	123	123	123	123	123	123	123
+October 23, 2012, 6:00 pm	ACIC	123	123	123	123	Retail	123	123	123	123	123	123	123
+October 23, 2012, 6:01 pm	ACIC	123	123	123	123	Other	123	123	123	123	123	123	123
+October 23, 2012, 6:06 pm	ENKCHINA	rishi	go.rishi@gmail.com	SELF	room 1	Other	sharma	2122222222	2122222223	self	http://www.google.com	friend	products
+October 25, 2012, 9:16 am	CHILDRENSCLUB	1	1	1	1	NONE	1	1	1	1	1	1	1
+October 25, 2012, 9:59 am	CHILDRENSCLUB	JoEfirst	Joe@emailcom	Joe company	Joe room	Exhibitor	joelast	joenumber	joefax	joetitle	joewebsite	jowhear	joeproduct
+October 25, 2012, 11:40 am	CHILDRENSCLUB	test	test	test	test	Press	test	test	test	tset	test	test	test
+October 25, 2012, 11:46 am	CHILDRENSCLUB	Test	test@test.com	test company	test room	Other	test name	1234567890	1234567890	test title	test site	testing 	testing
+November 5, 2012, 2:26 pm	ENKWSA	test	test	test	test	WSAPress	test	test	test	test	test	test	test
+November 8, 2012, 9:10 am	ENKWSA	1	1	1	1	WSAPress	1	1	1	1	1	1	1
+November 12, 2012, 10:20 am	ACIC	ads	asd	asd	asd	Press	asd	asd	asd	asd	asd	asd	asd
+November 12, 2012, 5:52 pm	ENKWSA	test	test	test	test	WSAPress	test	test	test	test	test	test	test
+November 12, 2012, 5:59 pm	ENKWSA	test	test	test	test	WSAPress	test	test	test	test	tset	test	test
+"November 16, 2012, 3:46 pm"	CHILDRENSCLUB	dfsadfsad	sadfsa@abv.bg	asfdsad	showroom	Press	asdfsa	fdsafdsafd	Website	"How Did You Hear About the Show?"	asfdsafd	sdfsaf	safdsadf	AZ	asfsadf	unisex	apparel
+"November 19, 2012, 8:49 am"	CHILDRENSCLUB	asdfsafd	asdfsaf@asd.asd	sadfsadf	safsadf	Exhibitor	asfdsafsaf	asdfsadf	safsadf	safdsadfa	asdfsad	fsafdsafd	sadfsadf	CA	asdfsafa	Array	Array
+"November 19, 2012, 8:04 am"	CHILDRENSCLUB	1	1@1.com	1	1	Exhibitor	1	1	1	1	1	1	1	AK	1	"mens, womens, children"	"accessory, apparel, other"
