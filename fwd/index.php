@@ -1,59 +1,67 @@
 <?php 
-  $name     = "Coterie";
-  $content  = "An International fashion exhibition in the U.S. featuring contemporary to traditional women’s ready-to-wear. Twice a year in NYC, concurrent with Sole Commerce and TMRW";
-  $keyword  = "Fashion Coterie, Coterie, womens trade show, womans trade show, international fashion trade show, sole commerce, tmrw, javits fashion, javits";
+  $name     = "FWD";
+  $content  = "A fashion forward juniors trade show showcasing the most sought-after juniors and young contemporary ready-to-wear during New York market week. With the addition of FWD, buyers now get exclusive access to the entire women’s marketplace in one location.";
+  $keyword  = "FWD Trade Show, FWD, junior trade show, juniors trade show, international fashion trade show,javits fashion, javits";
+
+  // This MUST be included for all other files to work
+  // This 'variables.php' file is global utility variables
+  // to help with file paths and URLS
+  // directory path will change if this is a main show page or 
+  // archived show page (EX: enkshows.com/coterie VS enkshows.com/coterie/2015/feb)
   include('../includes/variables.php'); 
-  require('../bin/ClassMathGuard.php');
-  include('../includes/fwd/2015/fwd-aug2015-vars.php');
-  include('../includes/show-header.php');
+
+  // MathGaurd powers our form Captcha. Must be included
+  require($root . '/bin/ClassMathGuard.php');
+
+  // Show specific variables
+  include($root . '/includes/fwd/2015/fwd-aug2015-vars.php');
+
+  // General show header with all relevant script/link tags
+  include($root . '/includes/show-header.php');
 ?> 
-<body class="coteriePage fc showPage">
-<span id="top" class="fwd-aug2015-hero"></span>
+
+<!-- 
+  The body must have three things
+  1. Show abbreviation as a class name
+    - This is a trigger to build the sidebar nagivation items with the show page modules
+  2. 'showPage' class as this provides showpage based stylings that are not apart of the home page
+  3. 'showPage' id for JS triggers
+ -->
+<body class="fwd showPage" id="showPage">
+<!-- 
+The '$hero' statement checks to see if there is a hero variable available
+if so, it generate embeds the hero class name from the show-specific variables document
+into the span tag and creatse the hero image for the background. 
+ -->
+<?php if ($hero) : ?>
+    <span id="top" class="<?php echo $hero; ?>"></span>
+<?php endif; ?>
 <div id="wrapper">
     <!-- Navigation-->  
     <div id="nav-col">
       <div id="nav">
-        <?php include('../includes/main-nav.php'); ?>
-        <?php include('../includes/main-nav-social.php'); ?>
+        <?php include($root . "/includes/main-nav.php"); ?>
+        <?php include($root . "/includes/main-nav-fwd-social.php"); ?>
       </div>
     </div> <!-- End Navigation --> 
   
     <!-- Content--> 
     <div id="main-col">
-      <!-- Show Hero / Info Container -->
-      <?php include('../includes/main-hero-container.php'); ?>
-      
-      <?php include('../includes/_v2/v2-show-description.php'); ?>
+      <?php if ($hero) : ?>
+        <?php include($root . '/includes/main-hero-container.php'); ?>
+      <?php else : ?>
+        <?php include($root . '/includes/new-template-show-header.php'); ?>
+      <?php endif; ?>
 
-      <!-- Show Descriptions -->
-      <!-- <?php //include('../includes/fc/2015/fc-2015-show-description.php'); ?> -->
-    
-      
+      <?php include($root . '/includes/_v2/v2-show-description.php'); ?>
 
-      <!-- Info Links/forms -->  
-      <?php include('../includes/fc/2015/fc-2015-forms.php'); ?>  
+      <?php include($root . '/includes/fwd/2015/fwd-forms.php'); ?>  
 
-      <!-- video Module --> 
-      <?php include('../includes/_partials/partial-video.php'); ?>
-    
-      <!-- Highlights Module --> 
-      <?php include('../includes/fc/2015/fc-feb2015-highlights.php'); ?>
+      <?php include($root . '/includes/fwd/2015/fwd-aug2015-floorplan.php'); ?>      
 
-      <!-- Soundcloud Module --> 
-      <?php include('../includes/fc/2015/fc-feb2015-soundcloud.php'); ?>
+      <?php include($root . '/includes/_partials/partial-hotel.php'); ?>  
 
-      <!-- Roster Module --> 
-      <?php include('../includes/fc/fc-sep2014-roster.php'); ?>
-
-      <!-- Floorplan Module --> 
-      <?php include('../includes/fc/2015/fc-feb2015-floorplan.php'); ?>      
-
-
-
-      <!-- Hotel + Travel Module --> 
-      <?php include('../includes/_partial/partial-hotel.php'); ?>  
-
-      <!-- Hotel + Travel Module --> 
+      <?php include($root . '/includes/_partials/partial-gallery.php'); ?>  
     
       <!-- BLANK SPACE-->
       <div style="float:left; clear:both; height:300px;"></div>
@@ -63,4 +71,9 @@
 
 </div><!-- end wrapper-->
 
-<?php include('../includes/new-show-footer.php'); ?>
+<?php 
+
+// This footer houses all the footer markup
+// and all the javascript scripts included on the page
+// as well as tracking scripts
+include($root . '/includes/new-show-footer.php'); ?>

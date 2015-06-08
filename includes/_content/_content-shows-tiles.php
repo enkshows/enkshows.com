@@ -25,7 +25,7 @@ $shows = array(
       "location" => "Javits.NYC",
       "year" => "2015",
       "attend" => true,
-      "link" => "http://www.enkshows.com/chirldresclub"
+      "link" => "http://www.enkshows.com/childrensclub"
     ),
     array(
       // show information
@@ -56,7 +56,7 @@ $shows = array(
       "year" => "2015",
       "attend" => true,
       "link" => "http://www.enkshows.com/fwd"
-    ),
+    ),   
     array(
       // show information
       "name" => "Project Womens",
@@ -101,11 +101,11 @@ $shows = array(
       // show information
       "name" => "Children's Club",
       "abbreviation" => "cc",
-      "dates" => "October 19.20.21",
+      "dates" => "October 18.19.20",
       "location" => "Javits.NYC",
       "year" => "2015",
       "attend" => true,
-      "link" => "http://www.enkshows.com/chirldresclub/2015/oct"
+      "link" => "http://www.enkshows.com/childrensclub/2015/oct"
     ),
     array(
       // show information

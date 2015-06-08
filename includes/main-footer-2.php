@@ -5,11 +5,12 @@
     <div id="footboxShows">
       <a class="show" href="http://www.enkshows.com/childrensclub" title="Children's Club">Children's Club</a>
       <a class="show" href="http://www.enkshows.com/circuit" title="Accessorie Circuit">Circuit</a>
-      <a class="show" href="http://www.enkshows.com/coterie" title="Coterie">Coterie</a>
-      <a class="show" href="http://www.enkshows.com/enkvegas" title="ENKVegas">ENKVegas</a>
+      <a class="show" href="http://www.enkshows.com/coterie" title="Coterie">Coterie</a>      
+      <a class="show" href="http://www.enkshows.com/fwd" title="FWD">FWD</a>
       <a class="show" href="http://www.enkshows.com/intermezzo" title="Intermezzo Collections">Intermezzo</a>
+      <a class="show" href="http://www.magiconline.com/project-womens" title="Project Womens">Project Womens</a>
       <a class="show" href="http://www.enkshows.com/sole" title="Sole Commerce">Sole</a>
-      <a class="show" href="http://www.enkshows.com/tmrw" title="TMRW">TMRW</a>
+      <a class="show" href="http://www.enkshows.com/tmrw" title="TMRW">TMRW</a>      
       <a></a>
     </div>
     <div id="footboxCompany">

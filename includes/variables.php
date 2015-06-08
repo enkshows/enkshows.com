@@ -41,7 +41,6 @@ define('DEV_TMRW', DEV_IMG . '/tmrw/');
 define('DEV_FWD', DEV_BASE . '/fwd/');
 
 
-
 define('PDF_BASE_DEV', 'http://dev.enkshows.com/pdf');
 define('PDF_ACIC_DEV', PDF_BASE_DEV . '/acic/');
 define('PDF_CHILDRENS_DEV', PDF_BASE_DEV . '/childrensclub/');
@@ -49,7 +48,6 @@ define('PDF_FC_DEV', PDF_BASE_DEV . '/coterie/');
 define('PDF_SC_DEV', PDF_BASE_DEV . '/sole/');
 define('PDF_TMRW_DEV', PDF_BASE_DEV . '/tmrw/');
 define('PDF_EV_DEV', PDF_BASE_DEV . '/enkvegas/');
-define('PDF_FWD_DEV', PDF_BASE_DEV . '/fwd/');
 
 
 

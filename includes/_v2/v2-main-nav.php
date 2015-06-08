@@ -21,7 +21,7 @@
             <a href="/childrensclub" title="Childrens Club" class="ext">Childrens Club</a> 
               <ul class="nav_third  cc-nav" id="navThirdcc"> </ul> </li>
           <li>
-            <a href="/enkvegas" title="ENKVegas" class="ext">ENKVEGAS</a>
+            <a href="http://www.magiconline.com/project-womens" target="_blank" title="Project Womens" class="ext">Project Womens</a>
               <ul class="nav_third ev-nav" id="navThirdvegas "> </ul> </li>
           <li>
             <a href="/coterie" title="Fashion Coterie" class="ext">Coterie</a>
@@ -32,6 +32,10 @@
           <li>
             <a href="/tmrw" title="TMRW" id="tmr" class="ext">TMRW</a>
               <ul class="nav_third tmrw-nav" id="navThirdtmrw "> </ul> </li>
+          <li>
+            <a href="/fwd" title="FWD" id="tmr" class="ext">FWD</a>
+              <ul class="nav_third fwd-nav" id="navThirdfwd "> </ul> </li>
+
           <li><a href="http://www.shopthefloor.com/" title="Shop The Floor" target="_blank" class="ext">Shop The Floor</a></li>
         </ul>
       </li>

@@ -28,9 +28,6 @@
       <!-- Show Dates / Calendar -->
 
 
-
-
-
   <!-- Attend -->
   <?php include("includes/main/main-attend.php"); ?>
 
