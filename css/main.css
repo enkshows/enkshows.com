@@ -382,20 +382,30 @@ p {
 
     .show-tile-ac {background-position: 0 0;}
     .show-tile-ac:hover {background-position: 0 -260px;}
+
     .show-tile-ic {background-position: -370px 0;}
     .show-tile-ic:hover {background-position: -370px -260px;}
+
     .show-tile-cc {background-position: -740px 0;}
     .show-tile-cc:hover {background-position: -740px -260px;}
-    .show-tile-ev {background-position: -1100px 0;}
-    .show-tile-ev:hover {background-position: -1100px -260px;}
-    .show-tile-fc {background-position: -1470px 0;}
-    .show-tile-fc:hover {background-position: -1470px -260px;}
-    .show-tile-tmrw {background-position: -1840px 0;}
-    .show-tile-tmrw:hover {background-position: -1840px -260px;}
-    .show-tile-sc {background-position: -2210px 0;}
-    .show-tile-sc:hover {background-position: -2210px -260px;}
-    .show-tile-stf {background-position: -2580px 0;}
-    .show-tile-stf:hover {background-position: -2580px -260px;}
+
+    .show-tile-fwd {background-position: -1100px 0;}
+    .show-tile-fwd:hover {background-position: -1100px -251px;}
+
+    .show-tile-ev {background-position: -1480px 0;}
+    .show-tile-ev:hover {background-position: -1480px -260px;}
+
+    .show-tile-fc {background-position: -1850px 0;}
+    .show-tile-fc:hover {background-position: -1850px -260px;}
+
+    .show-tile-tmrw {background-position: -2210px 0;}
+    .show-tile-tmrw:hover {background-position: -2210px -260px;}
+
+    .show-tile-sc {background-position: -2600px 0;}
+    .show-tile-sc:hover {background-position: -2600px -260px;}
+
+    .show-tile-stf {background-position: -2980px 0;}
+    .show-tile-stf:hover {background-position: -2980px -260px;}
 
     /* Attend Show Tiles (Show Registration Buttons)*/
     .attend-tile {height: 60px; background: url(../img/stripe_bg.gif) repeat;}
@@ -752,34 +762,3 @@ p {
       margin-right: 10px;
       color: #ee1c24;
     }
-
-
-
-.show-descriptions {
-  width: 760px;
-  margin-top: 20px;
-  float: left;
-}
-.show-descriptions .row {
-  display: table;
-  border-bottom: 1px solid black !important;
-  /*Fix this*/
-}
-.show-descriptions .row-item {
-  display: table-cell;
-  vertical-align: middle;
-  float: none;
-  padding-right: 20px;
-}
-
-.show-descriptions .row-item img {
-  width: 160px;
-}
-
-.show-descriptions .row-item p {
-  margin: 0;
-}
-
-.fc .show-descriptions .row-item p {
-  margin-bottom: 10px;
-}

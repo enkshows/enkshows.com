@@ -5,8 +5,9 @@
           <li><a class="show-link" href="http://www.enkshows.com/childrensclub" title="Children's Club">Children's Club</a></li>
           <li><a class="show-link" href="http://www.enkshows.com/circuit" title="Accessorie Circuit">Circuit</a></li>
           <li><a class="show-link" href="http://www.enkshows.com/coterie" title="Coterie">Coterie</a></li>
-          <li><a class="show-link" href="http://www.enkshows.com/enkvegas" title="ENKVegas">ENKVegas</a></li>
+          <li><a class="show-link" href="http://www.enkshows.com/fwd" title="FWD">FWD</a></li>
           <li><a class="show-link" href="http://www.enkshows.com/intermezzo" title="Intermezzo Collections">Intermezzo</a></li>
+          <li><a class="show-link" href="http://www.magiconline.com/project-womens" title="Project Womens" target="_blank">Project Womens</a></li>
           <li><a class="show-link" href="http://www.enkshows.com/sole" title="Sole Commerce">Sole</a></li>
           <li><a class="show-link" href="http://www.enkshows.com/tmrw" title="TMRW">TMRW</a></li>
         </ul>
