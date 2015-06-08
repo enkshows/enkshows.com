@@ -1,6 +1,5 @@
 <?php 
     include('../../../includes/variables.php');
-    require($root . '/bin/ClassMathGuard.php');
     
     include($root . '/includes/tmrw/tmrw-header.php'); 
 ?>

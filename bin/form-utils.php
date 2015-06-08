@@ -1,12 +1,12 @@
 <?php
 
 require("phpmailer.php");
-
-require_once("db_load.php");
+//TODO - UNCOMMENT REQUIRE AND RETURN;
+//require_once("db_load.php");
 
 
 function ENK_save_submission($entry, $db_table) {
-
+    return;
     $entry_keys = array('date');
 
     $entry_values = array(date("Y-m-d H:i:s"));

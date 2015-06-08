@@ -4,7 +4,6 @@
   $keyword  = "tmrw, Mens Tradeshow, Womens fashion tradeshow, New york trade show, international trade show, fashion coterie, ENK, Accessories tradeshow, Shoes Tradeshow, sole commerce, fashion trade events";
 
   include('../includes/variables.php'); 
-  require('../bin/ClassMathGuard.php');
   include('../includes/tmrw/2015/tmrw-feb2015-vars.php');
   include('../includes/show-header.php');
 ?>

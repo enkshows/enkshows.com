@@ -186,7 +186,7 @@
           </div>
           <input type="submit" name="submit" class="button" id="visitorForm_button" value="Submit" tabindex="524">
           <div class="captcha">
-            <?php MathGuard::insertQuestion(); ?>
+            <div class="enkCaptcha" id="fwdVisitFormCaptcha"></div>
           </div>
         </fieldset>
         <div class="form_message"></div>

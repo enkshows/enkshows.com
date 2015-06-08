@@ -96,11 +96,13 @@
 
 						<input type="submit" style="margin-top:20px;" name="submit" class="button" id="pressForm_button" value="Send" tabindex="207">
 						<div class="captcha" style="margin-top:0px;">
-							<?php MathGuard::insertQuestion(); ?>
+							<div class="enkCaptcha" id="mainPress2FormCaptcha"></div>
+
 						</div>
 					</div>
 				</fieldset>
 				<div class="form_message"></div>
+
 			</form>
 		</div>
 	</div>

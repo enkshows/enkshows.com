@@ -1,4 +1,3 @@
-<?php require('../../../bin/ClassMathGuard.php');?>
 <?php include("../../../includes/variables.php");?>
 
 <!doctype html>
@@ -267,7 +266,7 @@
                                         </div>
                                         <input type="submit" name="submit" class="button" id="showApplyForm_button" value="Submit" tabindex="422">
                                         <div class="captcha">
-                                          <?php MathGuard::insertQuestion(); ?>
+                                          <div class="enkCaptcha" id="cc2014JanAFormCaptcha"></div>
                                         </div>
                                     </fieldset>
                                     <div class="form_message"></div>
@@ -468,7 +467,7 @@
                                         </div>
                                         <input type="submit" name="submit" class="button" id="visitorForm_button" value="Submit" tabindex="524">
                                         <div class="captcha">
-                                          <?php MathGuard::insertQuestion(); ?>
+                                          <div class="enkCaptcha" id="cc2014JanBFormCaptcha"></div>
                                         </div>
                                     </fieldset>
                                     <div class="form_message"></div>
@@ -524,7 +523,7 @@
                                         </div>
                                         <input type="submit" name="submit" class="button" id="contactForm_button" value="Submit" tabindex="607">
                                         <div class="captcha">
-                                          <?php MathGuard::insertQuestion(); ?>
+                                          <div class="enkCaptcha" id="cc2014JanCFormCaptcha"></div>
                                         </div>
                                     
                                     </fieldset>

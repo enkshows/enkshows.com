@@ -1,13 +1,17 @@
 <?php
 
 require(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'form-utils.php');
-require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'ClassMathGuard.php');
+require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR .  "recaptcha-master/src/ReCaptcha/ReCaptcha.php");
 
-// Captcha check
-if (!MathGuard::checkResult(@$_REQUEST['mathguard_answer'], @$_REQUEST['mathguard_code'])) {
+
+//ReCaptcha Captcha Check
+$captcha_secret = "6LfnCQgTAAAAAKEt00Y3qk4YjkoUVsC0VQDPA6h-";
+$recaptcha = new \ReCaptcha\ReCaptcha($captcha_secret);
+$resp = $recaptcha->verify($_REQUEST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+if(!$resp->isSuccess()) {
     $response = array(
         'status'=>"error",
-        'error_message' => "SORRY, ANSWER IS INCORRECT. PLEASE TRY AGAIN AND CLICK SUBMIT",
+        'error_message' => "PLEASE CONFIRM THAT YOU ARE NOT A ROBOT.",
     );
     header('Content-type: application/json');
     echo json_encode($response);

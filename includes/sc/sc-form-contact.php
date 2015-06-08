@@ -1,3 +1,4 @@
+
 <div id="form3" class="form3 formhide">
  <h2>Contact</h2>
  <div class="desc-lg">
@@ -37,7 +38,7 @@
         </div>
         <input type="submit" name="submit" class="button" id="contactForm_button" value="Submit" tabindex="607">
         <div class="captcha">
-          <?php MathGuard::insertQuestion(); ?>
+          <div class="enkCaptcha" id="scContactFormCaptcha"></div>
         </div>
 
       </fieldset>

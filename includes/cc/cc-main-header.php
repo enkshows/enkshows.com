@@ -1,4 +1,4 @@
-<?php require('bin/ClassMathGuard.php');?>
+
 
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -24,4 +24,18 @@
   <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
   <!-- <script src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.7?1343675510"></script> -->
     
+    <script src="../../../js/jquery-1.2.3.pack.js" type="text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=explicit" async defer></script>
+    <script>
+      var captchaCallback = function() {
+        $(document).ready(function() {
+          $('.enkCaptcha').each(function() {
+            grecaptcha.render($(this).attr('id'), {
+              'sitekey' : '6LfnCQgTAAAAAO6APlJyI2q9z7ADVkusKSEaZban', //Replace this with your Site key
+              'theme' : 'light'
+            });          
+          });
+        });
+      };
+    </script>    
 </head>

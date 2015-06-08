@@ -3,7 +3,7 @@ include('../../../includes/variables.php');
 $name     = 'ENK Vegas';
 $content  = 'An all-women’s exhibition that runs concurrent with Magic Market Week, ENKVEGAS takes place twice a year (February and August) in Las Vegas.';
 $keyword  = 'ENKvegas, enk vegas, las vegas, Mens Tradeshow, Womens fashion tradeshow, New york trade show, international trade show, fashion coterie, ENK, Accessories tradeshow, Shoes Tradeshow, sole commerce, fashion trade events';
-require($root . '/bin/ClassMathGuard.php');
+
 
 include($root . '/includes/ev/2015/ev-feb2015-vars.php'); 
 include($root . '/includes/show-header.php');

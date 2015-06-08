@@ -11,7 +11,7 @@
   include('../includes/variables.php'); 
 
   // MathGaurd powers our form Captcha. Must be included
-  require($root . '/bin/ClassMathGuard.php');
+
 
   // Show specific variables
   include($root . '/includes/fc/2015/fc-sep2015-vars.php');

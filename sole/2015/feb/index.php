@@ -3,7 +3,7 @@ $name     = "Sole Commerece";
 $content  = "A trade show dedicated exclusively to footwear and handbags with the best domestic and international retailers.";
 $keyword  = "Sole Commerce, Mens Tradeshow, Womens fashion tradeshow, New york trade show, international trade show, fashion coterie, ENK, Accessories tradeshow, Shoes Tradeshow, sole commerce, fashion trade events";
 include('../../../includes/variables.php');
-require($root . '/bin/ClassMathGuard.php');
+
 include($root . '/includes/sc/2015/sc-feb2015-vars.php');
 include($root . '/includes/show-header.php');
 ?>

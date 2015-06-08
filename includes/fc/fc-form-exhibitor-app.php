@@ -158,7 +158,7 @@
           <input type="submit" name="submit" class="button" id="showApplyForm_button" value="Submit" tabindex="422">
 
           <div class="captcha">
-            <?php MathGuard::insertQuestion(); ?>
+            <div class="enkCaptcha" id="fcExhibitorFormCaptcha"></div>
           </div>
         </fieldset>
         <div class="form_message"></div>

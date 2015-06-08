@@ -47,7 +47,7 @@
 
 						<input type="submit" style="margin-top:20px;" name="submit" class="button" id="pressForm_button" value="Send" tabindex="207">
 						<div class="captcha" style="margin-top:0px;">
-							<?php MathGuard::insertQuestion(); ?>
+							<div class="enkCaptcha" id="v2MainPressFormCaptcha"></div>
 						</div>
 					</div>
 				</fieldset>

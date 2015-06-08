@@ -37,7 +37,7 @@
           </div>
           <input type="submit" name="submit" class="button" id="contactForm_button" value="Submit" tabindex="607">
           <div class="captcha">
-            <?php MathGuard::insertQuestion(); ?>
+            <div class="enkCaptcha" id="fcContactFormCaptcha"></div>
           </div>
         </fieldset>
         <div class="form_message"></div>

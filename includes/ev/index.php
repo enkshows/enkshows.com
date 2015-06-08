@@ -1,4 +1,4 @@
-<?php require('../../../bin/ClassMathGuard.php'); ?>
+
 <?php include("../../../includes/ev/ev-header.php"); ?>
 
 <div id="wrapper">

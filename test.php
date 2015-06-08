@@ -1,4 +1,4 @@
-<?php require('bin/ClassMathGuard.php');?>
+
 <?php require('includes/main-header.php');?>
 <body id="home" class="homePage">
 <div id="wrapper">
