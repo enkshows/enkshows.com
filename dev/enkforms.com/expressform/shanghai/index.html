@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SHANGHAI EXHIBITOR APPLICATION</title>
+  <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="appstyle.css" />
+</head>
+
+<body>
+<form name= "appform" id= "Shanghai" onSubmit="checkform()" method="post" action="send_shanghai.php" >
+
+<table align="center" border=0 cellpadding=0 cellspacing=0 width=1220 style='border-collapse: collapse'>
+ <col width=10>
+ <col width=200>
+ <col width=200>
+ <col width=200>
+ <col width=200>
+ <col width=200>
+ <col width=200>
+ <col width=5>
+ 
+ <tr height=130>
+    <td height=130 colspan=8><img src="header_shanghai.jpg" width=1219></td>
+  </tr>
+ <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+ 
+ 
+<!-- CONTACT INFORMATION SECTION -->
+ <tr height=25>
+   <td height=25></td>
+   <td class=itemhead colspan=6>Contact  Information</td>
+   <td></td>
+ </tr>
+ <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=6>Collection Name:
+       <input type="text" name="company" size="35" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr> 
+  <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=6>Showroom (if applicable):
+    <input type="text" name="showroom" size="35" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+  <tr height=25>
+   <td height=25></td>
+   <td colspan=6 class=address>Contact Name:
+    <input type="text" name="contact" size="35" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+  <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=6>Phone:
+    <input type="text" name="phone" size="35" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+ <tr height=25>
+   <td></td>  
+   <td class=address colspan=6>Email: 
+    <input type="text" name="email" size="30" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+   </td>
+   <td></td>
+ </tr>
+ <tr height=23>
+   <td height=23></td>
+   <td class=address colspan=6>Website: 
+    <input type="text" name="website" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+   </td>
+   <td></td>
+ </tr>
+ <tr height=23>
+   <td height=23></td>
+   <td></td>
+   <td></td>
+ </tr>
+ 
+ 
+ 
+<!-- PARTICIPATION INFORMATION SECTION -->
+ <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>Please indicate which shows you participate in (check all that apply)</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="part_AC" value="Accessorie Circuit" />&emsp;Accessorie Circuit</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="part_NYC" value="ENKNYC" />
+   &emsp;ENK NYC (Men's)</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="part_FC" value="Fashion Coterie" />
+   &emsp;Fashion Coterie (Women's)</td>
+   <td></td>
+  </tr>
+
+ <tr height=23>
+   <td height=23></td>
+    <td class=item colspan=2>&emsp;<input type="checkbox" name="part_CC" value="Children's Club" />&emsp;Children's Club</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="part_IC" value="Intermezzo" />
+   &emsp;Intermezzo (Women's)</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="part_VEGAS" value="ENKVEGAS" />
+     &emsp;ENKVEGAS (Women's &amp; Mens's)</td>
+   <td></td>
+ </tr>
+ <tr height=23>
+   <td height=23></td>
+      <td class=item colspan=2>&emsp;<input type="checkbox" name="part_CHIC" value="ENKUSA@CHIC" />
+     &emsp;ENKUSA@CHIC - Beijing</td>
+    <td class=item colspan=2>&emsp;<input type="checkbox" name="part_WSA" value="ENKWSA" />
+     &emsp;ENKWSA</td>
+   <td class=item></td>
+
+   <td></td>
+ </tr>
+ 
+ 
+ <!-- CATEGORY INFORMATION SECTION -->
+ <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6></td>
+   <td></td>
+ </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>Which of the following categories best defines your collection? (check all that apply)</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_bridge" value="Bridge" />&ensp;Bridge</td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_casual" value="Casual/Denim" /> &ensp;Casual/Denim</td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_cont" value="Contemporary" /> &ensp;Contemporary</td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_design" value="Designer" /> &ensp;Designer</td>
+   <td></td>
+   <td></td>
+   <td></td>
+  </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_evening" value="Evening Wear" />&ensp;Evening Wear</td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_footwear" value="Footwear" /> &ensp;Footwear</td>
+   <td class=item>&emsp;<input type="checkbox" name="cat_young" value="Young Contemporary" /> &ensp;Young Contemporary</td>
+   <td class=item colspan=3>&emsp;<input type="checkbox" name="cat_other" value="Other" /> &ensp;Other: 
+      <input type="text" name="cat_other_text" size="64" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+ 
+  <tr height=23>
+    <td height=23>&nbsp;</td>
+    <td class=item>&emsp;<input type="checkbox" name="cat_access_jewelry" value="Accessories - Jewelry" /> 
+        &ensp;Accessories - Jewelry&emsp;</td>	
+    <td class=item>&emsp;<input type="checkbox" name="cat_access_scarves" value="Accessories - Scarves" /> 
+        &ensp;Accessories - Scarves&emsp;</td>		
+	<td class=item>&emsp;<input type="checkbox" name="cat_access_hb" value="Accessories - Handbags" /> 
+        &ensp;Accessories - Handbags&emsp; </td>
+    <td class=item colspan=3>&emsp;<input type="checkbox" name="cat_access_other" value="Accessories - Other" /> &ensp;Accessories - Other: 
+        <input type="text" name="cat_access_other_text" size="51" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  <!-- COLLECTION CHANGED INFORMATION SECTION -->
+  <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>Has your collection changed significantly over the past year?</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+    <td height=23>&nbsp;</td> 
+    <td class=item><input type="radio" name="coll_change" value="yes"/>Yes&emsp;&emsp;<input type="radio" name="coll_change" value="no"/>No</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>   
+  </tr>
+  <tr height=40>
+    <td height=40>&nbsp;</td>
+    <td class=itemhead> If yes, please explain: </td>
+    <td class=note colspan=4>*We understand seasonality changes, provide details only if the collection you will show has a new direction, concept, etc. than what you screened/presented at the most recent show.</td>
+    <td></td>
+  </tr>
+  <tr height=23>
+    <td height=23>&nbsp;</td>
+    <td class=item colspan=6><input type="text" name="coll_change_explain" size="180" style=" border:none; border-bottom:solid windowtext .75pt"/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  <!-- AGE DEMOGRAPHIC INFORMATION SECTION -->
+   <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>What is the target age demographic? (check all that apply)</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=item>&emsp;<input type="checkbox" name="age_junior" value="Junior" /> &ensp;Juniors</td>
+   <td class=item>&emsp;<input type="checkbox" name="age_teen" value="Teen" /> &ensp;Teens</td>
+   <td class=item>&emsp;<input type="checkbox" name="age_18" value="18 to 24" /> &ensp;18-24</td>
+   <td class=item>&emsp;<input type="checkbox" name="age_25" value="25 to 34" />  &ensp;25-34</td>
+   <td></td>
+   <td></td>
+   <td></td>
+  </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=item>&emsp;<input type="checkbox" name="age_35" value="35 to 44" /> &ensp;35-44</td>
+   <td class=item>&emsp;<input type="checkbox" name="age_45" value="45 to 54" /> &ensp;45-54</td>
+   <td class=item>&emsp;<input type="checkbox" name="age_55" value="55+" />  &ensp;55+</td>
+   <td class=item></td>
+   <td></td>
+   <td></td>
+   <td></td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  <!-- PRICE POINT INFORMATION SECTION -->
+  <tr height=23>
+    <td height=23>&nbsp;</td>
+    <td colspan="6" class=itemhead>What is your average wholesale price points? (check all that apply)</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class=item>$20-$40</td>
+    <td class=item>$50-$75</td>
+    <td class=item>$75-$100</td>
+    <td class=item>$100-$200</td>
+    <td class=item>$200+</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Pants</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_pants_20" value="Pants $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_pants_50" value="Pants $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_pants_75" value="Pants $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_pants_100" value="Pants $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_pants_200" value="Pants $200+" /></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Tops</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_tops_20" value="Tops $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_tops_50" value="Tops $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_tops_75" value="Tops $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_tops_100" value="Tops $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_tops_200" value="Tops $200+" /></td>
+  </tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Dresses</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_dresses_20" value="Dresses $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_dresses_50" value="Dresses $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_dresses_75" value="Dresses $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_dresses_100" value="Dresses $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_dresses_200" value="Dresses $200+" /></td>
+  </tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Denim</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_denim_20" value="Denim $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_denim_50" value="Denim $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_denim_75" value="Denim $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_denim_100" value="Denim $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_denims_200" value="Denim $200+" /></td>
+  </tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Knits</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_knits_20" value="Knits $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_knits_50" value="Knits $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_knits_75" value="Knits $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_knits_100" value="Knits $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_knits_200" value="Knits $200+" /></td>
+  </tr>
+  <tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Jackets</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_jackets_20" value="Jackets $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_jackets_50" value="Jackets $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_jackets_75" value="Jackets $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_jackets_100" value="Jackets $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_jackets_200" value="Jackets $200+" /></td>
+  </tr>
+  <tr height=30>
+    <td height=30>&nbsp;</td>
+    <td class=item>Outerwear</td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_outerwear_20" value="Outerwear $20-$40" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_outerwear_50" value="Outerwear $50-$75" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_outerwear_75" value="Outerwear $75-$100" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_outerwear_100" value="Outerwear $100-$200" /></td>
+    <td class=item>&emsp;<input type="checkbox" name="avg_outerwear_200" value="Outerwear $200+" /></td>
+  </tr>
+  <tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  <!-- RETAIL LOCATION INFORMATION SECTION -->
+ <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>Do you have any retail locations?</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+    <td height=23>&nbsp;</td> 
+    <td class=item><input type="radio" name="retail_loc_yn" value="yes"/>Yes&emsp;&emsp;<input type="radio" name="retail_loc_yn" value="no"/>No</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>   
+  </tr>
+  <tr height=35>
+    <td height=35>&nbsp;</td>
+    <td class=itemhead colspan=3>If yes, please specify the number and location of your stores:</td>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr height=23>
+    <td height=23>&nbsp;</td>
+    <td class=item>Number of stores:&nbsp;<input type="text" name="num_stores" size="7" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td class=item colspan=5>List Locations&nbsp;<input type="text" name="locations" size="141" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+       <td>&nbsp;</td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+    <td class=item colspan=6>Locations (cont'd)&nbsp;<input type="text" name="locations2" size="170" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  <!-- TRADE SHOW PARTICIPATION INFORMATION SECTION -->
+  <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>Do you participate in any other trade shows with this collection?</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+    <td height=23>&nbsp;</td> 
+    <td class=item><input type="radio" name="other_shows_yn" value="yes"/>Yes&emsp;&emsp;<input type="radio" name="other_shows_yn" value="no"/>No</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>   
+  </tr>
+  <tr>
+    <td height=35>&nbsp;</td>
+    <td class=itemhead colspan=6> If yes, please list both domestic and international shows, if you sit within a particular section please specify: 
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=35>
+    <td height=35>&nbsp;</td>
+    <td class=item colspan=6><input type="text" name="other_shows" size="189" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+ <!-- CHINA DISTRIBUTION INFORMATION SECTION --> 
+  <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>What is your desired method of distribution in China? (check all that apply)</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+   <td height=23></td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="dist_reg_part" value="Regional Distributor Patnership" />&emsp;Regional Distributor Patnership</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="dist_ecomm" value="E-commerce" />&emsp;E-commerce</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="dist_retail_store" value="Retail stand-alone store" />
+   &emsp;Retail stand-alone store</td>
+   <td></td>
+  </tr>
+
+ <tr height=23>
+   <td height=23></td>
+    <td class=item colspan=2>&emsp;<input type="checkbox" name="dist_retail_mall" value="Retail store in a mall" />&emsp;Retail store in a mall</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="dist_multi" value="Multi-brand retailer" />&emsp;Multi-brand retailer</td>
+   <td class=item colspan=2>&emsp;<input type="checkbox" name="dist_license" value="License Brand" />&emsp;License Brand</td>
+   <td></td>
+ </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  
+  <!-- CURRENT DISTRIBUTION INFORMATION SECTION -->
+  <tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6>Does your collection currently have any distribution in Mainland China?</td>
+   <td></td>
+ </tr>
+  <tr height=23>
+    <td height=23>&nbsp;</td> 
+    <td class=item><input type="radio" name="current_dist_yn" value="yes"/>Yes&emsp;&emsp;<input type="radio" name="current_dist_yn" value="no"/>No</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>   
+  </tr>
+  <tr height=35>
+    <td height=35>&nbsp;</td>
+    <td class=itemhead colspan=6> If yes, please specify where and for how many seasons 
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=35>
+    <td height=35>&nbsp;</td>
+    <td class=item colspan=6><input type="text" name="current_dist" size="189" style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <!-- PUBLICITY INFORMATION SECTION -->
+  <tr height=46>
+   <td height=46></td>
+   <td class=itemhead colspan=6>Please list any noteworthy projects, celebrity partnerships, collaborations, charities, etc. that the line is involved with this season:</td>
+   <td></td>
+ </tr>
+  <tr>
+    <td></td><td class=item colspan=6><textarea name="publicty" rows=6 cols=140></textarea></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+ 
+ 
+ 
+ <!-- BOOTH SIZE INFORMATION SECTION -->
+  <tr height=46>
+   <td height=46></td>
+   <td class=itemhead colspan=6>Please specify 1st, 2nd and 3rd choice booth size and type, if accepted to the upcoming show:</td>
+   <td></td>
+ </tr>
+  <tr height=25>
+    <td height=25 >&nbsp;</td>
+    <td class=dropdown align="left"><select id="type_first" name='type_first' size="1">
+          <option value="In-line">In_line</option>
+          <option value="Corner">Corner</option>
+          <option value="Peninsula">Peninsula (2 corners)</option>
+          <option value="Interior Peninsula">Interior Peninsula (No corners)</option>
+        </select></td>
+    <td class=item>Booth Type - 1st Choice</td>
+    <td class=dropdown align="left"><select id="type_second" name='type_second' size="1">
+          <option value="In-line">In_line</option>
+          <option value="Corner">Corner</option>
+          <option value="Peninsula">Peninsula (2 corners)</option>
+          <option value="Interior Peninsula">Interior Peninsula (No corners)</option>
+        </select></td>
+    <td class=item>Booth Type - 2nd Choice</td>
+    <td class=dropdown align="left"><select id="type_third" name='type_third' size="1">
+          <option value="In-line">In_line</option>
+          <option value="Corner">Corner</option>
+          <option value="Peninsula">Peninsula (2 corners)</option>
+          <option value="Interior Peninsula">Interior Peninsula (No corners)</option>
+        </select></td>
+    <td class=item>Booth Type - 3rd Choice</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=25>
+    <td height=25 >&nbsp;</td>
+    <td class=dropdown align="left">
+	    <select id="size_first" name='size_first' size="1">
+          <option value="10'deep x 10'wide / 3x3 meters">10'deep x 10'wide / 3x3 meters</option>
+          <option value="10'deep x 13'wide / 3x4 meters">10'deep x 13'wide / 3x4 meters</option>
+          <option value="10'deep x 16'wide / 3x5 meters">10'deep x 16'wide / 3x5 meters</option>
+          <option value="10'deep x 20'wide / 3x6 meters">10'deep x 20'wide / 3x6 meters</option>
+		  <option value="20'deep x 20'wide / 3x6 meters">20'deep x 20'wide / 6x6 meters</option>
+        </select></td>
+    <td class=item>Booth Size - 1st Choice</td>
+    <td class=dropdown align="left">
+	    <select id="size_second" name='size_second' size="1">
+          <option value="10'deep x 10'wide / 3x3 meters">10'deep x 10'wide / 3x3 meters</option>
+          <option value="10'deep x 13'wide / 3x4 meters">10'deep x 13'wide / 3x4 meters</option>
+          <option value="10'deep x 16'wide / 3x5 meters">10'deep x 16'wide / 3x5 meters</option>
+          <option value="10'deep x 20'wide / 3x6 meters">10'deep x 20'wide / 3x6 meters</option>
+		  <option value="20'deep x 20'wide / 3x6 meters">20'deep x 20'wide / 6x6 meters</option>
+        </select></td>
+    <td class=item>Booth Size - 2nd Choice</td>
+    <td class=dropdown align="left">
+	    <select id="size_third" name='size_third' size="1">
+          <option value="10'deep x 10'wide / 3x3 meters">10'deep x 10'wide / 3x3 meters</option>
+          <option value="10'deep x 13'wide / 3x4 meters">10'deep x 13'wide / 3x4 meters</option>
+          <option value="10'deep x 16'wide / 3x5 meters">10'deep x 16'wide / 3x5 meters</option>
+          <option value="10'deep x 20'wide / 3x6 meters">10'deep x 20'wide / 3x6 meters</option>
+		  <option value="20'deep x 20'wide / 3x6 meters">20'deep x 20'wide / 6x6 meters</option>
+        </select></td>
+    <td class=item>Booth Size - 3rd Choice</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=35>
+    <td height=35>&nbsp;</td>
+    <td class=item colspan=6>&nbsp;Please be advised that ENK will make every effort fulfill your request, contingent upon the availablity of booth size, type and location.</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  
+ <!-- STORE AND BUYER INFORMATION SECTION -->
+ <tr height=46>
+   <td height=46></td>
+   <td class=itemhead colspan=6>Store and Buyer Information</td>
+   <td></td>
+ </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class=item colspan=6>Please list the top 3 department or specialty stores in which you are currently selling and what percentage of your collection is carried by the store.</td>
+    <td>&nbsp;</td>
+  </tr>
+ <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=2><b>1. Store:&ensp;</b>
+       <input type="text" name="store1" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td class=address colspan=2><b>Buyer's Phone:&ensp;</b>
+    <input type="text" name="store1_phone" size="30" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td colspan=2 class=address><b>Website:&ensp;</b>
+    <input type="text" name="store1_website" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+ <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=2>Buyer Name:
+       <input type="text" name="store1_name" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td class=address colspan=2>Title
+    <input type="text" name="store1_title" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td colspan=2 class=address>Email:
+    <input type="text" name="store1_email" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=address colspan=6>Buyer Address:
+     <input type="text" name="store1_address" size="160" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=address colspan=6>Percentage of collection carried by the store: 
+     <input type="text" name="store1_percent" size="20" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+<tr height=25>
+   <td height=25></td>
+   <td class=address colspan=2><b>2. Store:&ensp;</b>
+       <input type="text" name="store2" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td class=address colspan=2><b>Buyer's Phone:&ensp;</b>
+    <input type="text" name="store2_phone" size="30" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td colspan=2 class=address><b>Website:&ensp;</b>
+    <input type="text" name="store2_website" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+ <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=2>Buyer Name:
+       <input type="text" name="store2_name" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td class=address colspan=2>Title
+    <input type="text" name="store2_title" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td colspan=2 class=address>Email:
+    <input type="text" name="store2_email" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=address colspan=6>Buyer Address:
+     <input type="text" name="store2_address" size="160" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=address colspan=6>Percentage of collection carried by the store: 
+     <input type="text" name="store2_percent" size="20" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+<tr height=25>
+   <td height=25></td>
+   <td class=address colspan=2><b>3. Store:&ensp;</b>
+       <input type="text" name="store3" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td class=address colspan=2><b>Buyer's Phone:&ensp;</b>
+    <input type="text" name="store3_phone" size="30" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td colspan=2 class=address><b>Website:&ensp;</b>
+    <input type="text" name="store3_website" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+ <tr height=25>
+   <td height=25></td>
+   <td class=address colspan=2>Buyer Name:
+       <input type="text" name="store3_name" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td class=address colspan=2>Title
+    <input type="text" name="store3_title" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td colspan=2 class=address>Email:
+    <input type="text" name="store3_email" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+   <td></td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=address colspan=6>Buyer Address:
+     <input type="text" name="store3_address" size="160" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=address colspan=6>Percentage of collection carried by the store: 
+     <input type="text" name="store3_percent" size="20" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  
+  
+  <!-- ADDITIONAL INFORMATION SECTION -->
+  <tr height=46>
+   <td height=46></td>
+   <td class=itemhead colspan=6>Please provide any additional information or comments below that you feel may assist the Jury in making their decision:</td>
+   <td></td>
+ </tr>
+  <tr>
+    <td></td><td class=item colspan=6><textarea name="add_info" rows=6 cols=140></textarea></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr height=25>
+    <td height=25>&nbsp;</td>
+   <td class=itemhead colspan=6>Note: Completing this application does not guarantee acceptance into ENK Mode Shanghai 2013, nor does particpation in past ENK shows.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+     <td>&nbsp;</td>
+	 <td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  </tr> 
+  <tr>
+    <td>&nbsp;</td>
+	<td><input type="submit" name="checkbox2" value="Submit Form"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+	<td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  </tr>
+    <tr>
+    <td>&nbsp;</td>
+	<td class=itemhead colspan=2>For questions, please feel free to contact:</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  </tr>
+  <tr height=7>
+    <td height=7>&nbsp;</td>
+	<td></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+	<td class=itemhead>Womens</td>
+    <td class=itemhead>Men's</td>
+    <td class=itemhead>Footwear</td>
+    <td class=itemhead>Show Coordinator</td>
+    <td class=item>&nbsp;</td>
+    <td class=item>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+	<td class=item>Lee Rosenbaum</td>
+    <td class=item>Mike Sampson</td>
+    <td class=item>David Kahan</td>
+    <td class=item>Matt Nastos</td>
+    <td class=item>&nbsp;</td>
+    <td class=item>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+	<td class=item>646.841.1464</td>
+    <td class=item>646.841.1446</td>
+    <td class=item>646.841.1461</td>
+    <td class=item>646.841.1447</td>
+    <td class=item>&nbsp;</td>
+    <td class=item>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+	<td class=item>lrosenbaum@enkshows.com</td>
+    <td class=item>msampson@enkshows.com</td>
+    <td class=item>dkahan@enkshows.com</td>
+    <td class=item>mnastos@enkshows.com</td>
+    <td class=item>&nbsp;</td>
+    <td class=item>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+<tr height=23>
+   <td height=23></td>
+   <td class=itemhead colspan=6></td>
+   <td></td>
+ </tr>
+ 
+ </table>
+</body>
+</html>

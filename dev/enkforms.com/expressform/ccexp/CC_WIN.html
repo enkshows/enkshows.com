@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<style>
+.address
+   {color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	text-align:left;}
+
+.title
+	{color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	vertical-align:middle;}
+
+.title_red
+	{color:red;
+	font-size:18.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	text-align:right;
+	vertical-align:middle;}	
+</style>
+
+
+<script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+<script type="text/javascript">
+function sendCCinfo()
+{
+ var ccnum = document.getElementById('credit').value;
+ var xdate = document.getElementById('exp_date').value; 
+ var name = document.getElementById('cardholder').value; 
+ var ccvnum = document.getElementById('ccv').value;
+ var address = document.getElementById('billing_street').value;
+ var cityst = document.getElementById('billing_city').value;
+ 
+ window.opener.myform.credit.value = ccnum;
+ window.opener.myform.exp_date.value = xdate;
+ window.opener.myform.cardholder = name;
+ window.opener.myform.ccv.value = ccvnum;
+ window.opener.myform.billing_street.value = address;
+ window.opener.myform.billing_city.value = cityst; 
+  
+ window.opener = self;
+ window.close();
+ 
+} 
+</script>
+</head>
+<body> 
+<form name="ccform">
+<img src="images/cc_header_oct12.jpg" width="875"  alt="CC Header">
+<p class=title>
+<br />
+Please Enter Credit Card Information:</p>
+<p class=address><br />
+Credit Card Number: <input type='text'  name='credit' id='credit' size='43' class='address'  style=' border:none; border-bottom:solid windowtext.75pt;'>
+&emsp;&emsp;
+Expiration Date:<input type='text' name='exp_date' id='exp_date' size='20' class='address'  style=' border:none; border-bottom:solid windowtext .75pt;'>
+<br />
+Cardholder Name:<input type='text' name='cardholder' id='cardholder' size='45' class='address'  style=' border:none; border-bottom:solid windowtext .75pt;'>
+&emsp;&emsp;
+CCV: <input type='text' name='ccv' id='ccv' size='15' class='address'  style=' border:none; border-bottom:solid windowtext .75pt;'><br />
+Billing Street Address:<input type='text' name='billing_street' id='billing_street' size='80' class='address'  style=' border:none; border-bottom:solid windowtext .75pt;'>
+<br />
+Billing City, State Zip, Country:<input type='text' name='billing_city' id='billing_city' size='80' class='city'  style=' border:none; border-bottom:solid windowtext .75pt;'>
+</p>
+<br />
+<input type="submit" onclick="sendCCinfo()" value="SUMBIT CC INFO">
+</form>
+
+
+
+
+</body>
+
+
+</html>

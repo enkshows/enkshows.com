@@ -1,0 +1,4 @@
+[10-Sep-2012 22:36:10] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/enkshows/public_html/enkforms.com/expressform/cc/send_cc_test.php on line 880
+[10-Sep-2012 22:37:38] PHP Parse error:  syntax error, unexpected '<' in /home/enkshows/public_html/enkforms.com/expressform/cc/send_cc_test.php on line 881
+[10-Sep-2012 22:52:06] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/enkshows/public_html/enkforms.com/expressform/cc/send_cc.php on line 890
+[21-Sep-2012 18:01:03] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/enkshows/public_html/enkforms.com/expressform/cc/send_cc.php on line 278

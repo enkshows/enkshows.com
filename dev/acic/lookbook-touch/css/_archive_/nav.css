@@ -1,0 +1,217 @@
+/*
+
+Cool Sprites - Copyright © 2010 Deepu Balan, All rights reserved 
+http://www.deepubalan.com/
+
+*/
+
+/* --------------------NAV UPPER #1-------------------- */
+
+/* --------------------Menu style #1-------------------- */
+.nav {  
+  margin: 0 0 0 25px;
+  background-image:url(../images/mustagrapho_nav-box.png);
+  background-repeat:no-repeat;
+  position:relative;
+  padding: 0;
+  width: 218px;
+  height: 273px;
+  list-style-type:none;
+  float:left;
+  z-index:1000;
+  
+}
+.nav ul {
+  float: left;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0 0;
+}
+.nav ul li {
+  background-image: url(../images/mustagrapho_nav.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position:absolute;
+  width: 100%;
+}
+
+/* --------------------Menu style Up-------------------- */
+
+.nav ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.nav ul li.people {
+  background-position: 0px 0px;
+  width: 205px;
+  height: 42px;
+  left: 13px;
+  top: 0px;
+}
+.nav ul li.places {
+  background-position: 0px -42px;
+  width: 205px;
+  height: 38px;
+  left: 13px;
+  top: 42px;
+}
+.nav ul li.else {
+  background-position: 0px -80px;
+  width: 205px;
+  height: 45px;
+  left: 13px;
+  top: 71px;
+}
+.nav ul li.services {
+  background-position: 0px -125px;
+  width: 205px;
+  height: 35px;
+  left: 13px;
+  top: 118px;
+}
+.nav ul li.contact {
+  background-position: 0px -160px;
+  width: 205px;
+  height: 36px;
+  left: 13px;
+  top: 154px;
+}
+
+.nav ul li.mustagraphy {
+  background-position: 0px -196px;
+  width: 205px;
+  height: 47px;
+  left: 13px;
+  top: 182px;
+}
+
+.nav ul li.blog {
+  background-position: 0px -243px;
+  width: 205px;
+  height: 30px;
+  left: 13px;
+  top: 236px;
+}
+
+/* --------------------Menu style Over-------------------- */
+
+.nav ul li:hover{
+  z-index: 1000;
+}
+.nav ul li.people:hover {
+  background-position: -205px 0px; 
+}
+.nav ul li.places:hover {
+  background-position: -205px -42px; 
+}
+.nav ul li.else:hover {
+  background-position: -205px -80px; 
+}
+.nav ul li.services:hover {
+  background-position: -205px -125px; 
+}
+.nav ul li.contact:hover {
+  background-position: -205px -160px; 
+}
+.nav ul li.mustagraphy:hover {
+  background-position: -205px -196px; 
+}
+.nav ul li.blog:hover {
+  background-position: -205px -243px; 
+}
+
+
+
+
+/* --------------------NAV LOWER #2-------------------- */
+
+/* --------------------Menu style #2-------------------- */
+.lowernav {  
+  margin: -8px 0 0 10px;
+  background-image:url(../images/mustagrapho_lowernav-box.png);
+  background-repeat:no-repeat;
+  position:relative;
+  padding: 0;
+  width: 256px;
+  height: 156px;
+  list-style-type:none;
+  float:left;
+  z-index:900;
+}
+.lowernav ul {
+  float: left;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0 0;
+}
+.lowernav ul li {
+  background-image: url(../images/mustagrapho_nav.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position:absolute;
+  width: 100%;
+}
+
+/* --------------------Menu style Up-------------------- */
+
+.lowernav ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.lowernav ul li.ac {
+  background-position: 0px -272px;
+  width: 254px;
+  height: 40px;
+  left: 0px;
+  top: 27px;
+}
+.lowernav ul li.flickr {
+  background-position: 0px -352px;
+  width: 41px;
+  height: 33px;
+  left: 80px;
+  top: 87px;
+}
+.lowernav ul li.facebook {
+  background-position: -41px -352px;
+  width: 70px;
+  height: 33px;
+  left: 0px;
+  top: 75px;
+}
+.lowernav ul li.twitter {
+  background-position: -111px -352px;
+  width: 53px;
+  height: 33px;
+  left: 130px;
+  top: 95px;
+}
+
+
+/* --------------------Menu style Over-------------------- */
+
+.lowernav ul li:hover{
+  z-index: 1000;
+}
+.lowernav ul li.ac:hover {
+  background-position: 0px -312px; 
+}
+.lowernav ul li.flickr:hover {
+  background-position: 0px -385px; 
+}
+.lowernav ul li.facebook:hover {
+  background-position: -41px -385px; 
+}
+.lowernav ul li.twitter:hover {
+  background-position: -111px -385px; 
+}
+
+
+
+

@@ -1,4 +1,4 @@
-
+<?php require('bin/ClassMathGuard.php');?>
 <?php include("includes/variables.php"); ?>
 <?php include("includes/_v2/main-header-speed-test.php"); ?>
 
@@ -24,7 +24,7 @@
         <!-- Exhibit -->
         <?php include("includes/_v2/v2-main-exhibit.php"); ?>
         
-        <!-- Press -->fdjkf
+        <!-- Press -->
         <?php include("includes/_v2/v2-main-press.php"); ?>  
         
         <!-- Travel -->

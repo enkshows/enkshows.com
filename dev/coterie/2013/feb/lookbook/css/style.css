@@ -1,0 +1,1297 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; 
+	   -webkit-text-size-adjust: 100%; 
+	   -ms-text-size-adjust: 100%;
+	    }
+
+html, button, input, select, textarea { font-family: 'GBook', Arial, Helvetica, sans-serif; font-weight:normal; color: #fff; }
+
+body { margin: 0; line-height: 1.4; background-color:#000; font-family: 'GBook', Arial, Helvetica, sans-serif; 
+font-weight:normal; height:100%;
+		background: url(../img/bg.jpg) no-repeat top center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+ }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #333; color: #fff; text-shadow: none; }
+::selection { background: #333; color: #fff; text-shadow: none; }
+
+/* =============================================================================
+   RESET CSS
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a:link, a:visited { color: #ffff; text-decoration:none; font-family: 'GBook', Arial, Helvetica, sans-serif; font-weight:normal; }
+a:hover, a:focus { color: #fff;  }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-family: 'GBold', Arial, Helvetica, sans-serif; font-weight:normal; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+p {line-height:30px; margin-bottom:20px;}
+	p:last-child{line-height:30px; margin-bottom:0px;}
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==|== primary styles =====================================================
+   Author: Adrian Cabrero
+   ========================================================================== */
+
+
+
+
+/* ==|== ISOTOPE =====================================================
+  ISOTOPE STYLES
+   ========================================================================== */
+/* Header */
+
+#headerContainer{
+					position:relative; width:1010px; margin:0 auto; z-index:55555;
+					
+					}
+					
+
+/* content */
+					
+#content {position:relative; min-width:1020px;  width:95%; height:100%; margin:0 auto; padding:0;  }
+[if {!} SafMob] #content {position:relative;  width:1020px; height:100%; margin:0 auto; padding:0; }
+
+#container {
+  border: none;
+  padding: 0;
+  margin-bottom: 100px;
+  margin-top:40px;
+}
+
+
+
+					
+					
+/* Caption styles */
+		.caption{
+			width: 100%;
+			height: 20px;
+			overflow: hidden;
+			position: absolute;
+			display:none;
+			text-align:right;
+			bottom:0;
+			left:0;
+			background-color:#fff;
+			color: #000;
+			z-index: 999999999999;
+			}	
+				
+				a.capLink:link, a.capLink:visited  {
+					position:relative;
+					display:block;
+					height:20px;
+					top:3px;
+					right:5px;
+					text-align:right;
+					font-family:'GMedium', Arial, Helvetica, sans-serif;
+					font-weight: normal;
+					font-size:11px;
+					width:100%;
+					color:#ec1c24;
+				}
+				
+					
+				a.capLink:hover{
+						text-decoration: underline;
+					}		
+					
+
+
+
+			
+			
+
+
+
+/* element & Image styles */
+
+/* TEXT BOX */
+
+	.text { 
+		  width:460px; 
+		  height:auto;
+		  margin: 0 10px 10px 0;
+		  padding:20px;
+		  overflow: hidden;
+		  position: relative;
+		  cursor:pointer;
+		  text-align:left;
+		  color:#000;
+		  font-size:12px;
+          background-color:#f6f6f6;
+		  line-height:18px;
+		  font-family: 'GBook', Arial, Helvetica, sans-serif; 
+		  font-weight:normal;
+		  }
+		  
+		  .text p{
+		  	margin:0;
+			padding:0;
+			line-height:18px;
+		  }
+		.text strong{
+			color:#ec1c24;
+		}	
+			
+		.textInfo{
+			font-size:30px; 
+			height:100%;
+			display:block;
+			line-height:30px;
+			margin:0;
+			padding:0;
+			font-family: 'GBold', Arial, Helvetica, sans-serif; 
+		  	font-weight:normal;
+			}
+
+
+
+		a.textLink:link, a.textLink:visited  {
+					color:#000;
+					text-decoration:none;
+				}
+				
+					
+				a.textLink:hover{
+						text-decoration: underline;
+					}
+
+/* See all images box */
+
+	.seeAll { 
+		  margin: 0 10px 10px 0;
+		  padding:0px;
+		  overflow: hidden;
+		  position: relative;
+		  cursor:pointer;
+		  text-align:left;
+		  color:#000;
+		  font-size:12px;
+		  background-color:#f6f6f6;
+		  line-height:18px;
+		  font-family: 'GBook', Arial, Helvetica, sans-serif; 
+		  font-weight:normal;
+		  }
+		  
+
+		.seeAll a:link, .seeAll a:visited  {
+					  width:175px; 
+					  height:40px;
+					  margin: 0px;
+					  padding:45px 0px 20px 70px;
+					  position: relative;
+					  color:#ec1c24;
+					  display:block;
+					  background-color:#f6f6f6;
+					  font-size:20px; 
+					  line-height:18px;
+					  font-family: 'GBold', Arial, Helvetica, sans-serif; 
+					  font-weight:normal;
+					  text-decoration: none;
+				}
+				
+					
+				.seeAll a:hover{
+						text-decoration: none;
+						color:#000;
+					}
+
+/* Top */					
+
+	.top { 
+		  margin: 0 10px 10px 0;
+		  padding:0px;
+		  overflow: hidden;
+		  position: relative;
+		  cursor:pointer;
+		  text-align:left;
+		  color:#000;
+		  font-size:12px;
+		  background-color:#f6f6f6;
+		  line-height:18px;
+		  font-family: 'GBook', Arial, Helvetica, sans-serif; 
+		  font-weight:normal;
+		  }
+		  
+
+		.top a:link, .top a:visited  {
+					  width:205px; 
+					  height:40px;
+					  margin: 0px;
+					  padding:45px 0px 20px 40px;
+					  position: relative;
+					  color:#ec1c24;
+					  display:block;
+					  background-color:#f6f6f6;
+					  font-size:20px; 
+					  line-height:18px;
+					  font-family: 'GBold', Arial, Helvetica, sans-serif; 
+					  font-weight:normal;
+					  text-decoration: none;
+				}
+				
+					
+				.top a:hover{
+						text-decoration: none;
+						color:#000;
+					}			
+
+/* Overall ELEMENT properties */
+
+	.element {
+		  width: 200px;
+		  margin: 0 10px 10px 0;
+		  padding:0 0 0 0;
+		  float: left;
+		  overflow: hidden;
+		  position: relative;
+		  background: #fff;
+		  color: #222;
+		  display: none;
+		}
+			.element img {
+			  width: 100%;
+			  height:100%;
+			}
+			
+
+
+/*Two Sizes, 500 and 200 width. Create a new class with specific sizes for each exhibitor */
+		
+		
+		
+			.element.bless {width:500px; height:334px; }
+				.element.bless.large,
+				.element.bless.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}
+		
+			.element.paige {width:245px; height:187px; }
+				.element.paige.large,
+				.element.paige.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}
+		
+					.element.nicole {width:245px; height:368px; }
+						.element.nicole.large,
+						.element.nicole.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}
+						
+							.element.nicole2 {width:500px; height:751px; }
+								.element.nicole2.large,
+								.element.nicole2.large.width2.height2 {
+								  z-index: 100;
+								  float:left;
+								}
+						
+						
+				
+			.element.clu {width:245px; height:333px; }
+				.element.clu.large,
+				.element.clu.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				 
+				}
+		
+			.element.colette {width:245px; height:350px; }
+				.element.colette.large,
+				.element.colette.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				   width:500px;
+				  height:714px;
+				}
+				
+					.element.colette2 {width:245px; height:368px; }
+						.element.colette2.large,
+						.element.colette2.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}
+						
+						
+						
+			.element.erin {width:245px; height:368px; }
+						.element.erin.large,
+						.element.erin.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}			
+		
+			.element.gerard {width:245px; height:223px; }
+				.element.gerard.large,
+				.element.gerard.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}
+				
+			.element.twelfth2 {width:500px; height:474px; }
+				.element.twelfth2.large,
+				.element.twelfth2.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+		
+					.element.twelfth {width:245px; height:375px; }
+						.element.twelfth.large,
+						.element.twelfth.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}		
+		
+			.element.twenty {width:245px; height:368px; }
+						.element.twenty.large,
+						.element.twenty.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}
+		
+			.element.sw3 {width:245px; height:426px; }
+				.element.sw3.large,
+				.element.sw3.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}
+		
+			.element.gold {width:500px; height:333px; }
+				.element.gold.large,
+				.element.gold.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+		
+					.element.house2 {width:500px; height:500px; }
+						.element.house2.large,
+						.element.house2.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}	
+		
+		
+						.element.house {width:245px; height:385px; }
+							.element.house.large,
+							.element.house.large.width2.height2 {
+							  z-index: 100;
+							  float:left;
+							}	
+					
+					.element.rose {width:245px; height:245px; }
+						.element.rose.large,
+						.element.rose.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}	
+		
+		
+						.element.rose2 {width:245px; height:385px; }
+							.element.rose2.large,
+							.element.rose2.large.width2.height2 {
+							  z-index: 100;
+							  float:left;
+							}				
+		
+			.element.paul {width:245px; height:369px; }
+				.element.paul.large,
+				.element.paul.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; 
+				  height:751px;
+				}
+		
+			.element.vita2 {width:245px; height:317px; }
+				.element.vita2.large,
+				.element.vita2.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+				.element.vita {width:245px; height:175px; }
+					.element.vita.large,
+					.element.vita.large.width2.height2 {
+					  z-index: 100;
+					  float:left;
+					}		
+		
+			.element.mih {width:500px; height:320px; }
+				.element.mih.large,
+				.element.mih.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+		
+			.element.ronen2 {width:500px; height:301px; }
+				.element.ronen2.large,
+				.element.ronen2.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+				
+				.element.ronen {width:245px; height:375px; }
+						.element.ronen.large,
+						.element.ronen.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}		
+		
+				.element.nonoo {width:245px; height:368px; }
+						.element.nonoo.large,
+						.element.nonoo.large.width2.height2 {
+						  z-index: 100;
+						  float:left;
+						}
+		
+				.element.nanette {width:245px; height:368px; }
+							.element.nanette.large,
+							.element.nanette.large.width2.height2 {
+							  z-index: 100;
+							  float:left;
+							}	
+		
+		
+			.element.kate {width:245px; height:392px; }
+				.element.kate.large,
+				.element.kate.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px;
+				   height:800px;
+				}	
+				
+				
+				
+				
+				
+				
+			.element.xxx {width:245px; height:735px; }
+				.element.xxx.large,
+				.element.xxx.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+		
+			.element.Addison {width:245px; height:343px; }
+				.element.Addison.large,
+				.element.Addison.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:700px;
+				}	
+				
+			.element.Ainsley {width:500px; height:332px; }
+				.element.Ainsley.large,
+				.element.Ainsley.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:245px; height:310px;
+				}		
+			
+			.element.Heartloom {width:500px; height:333px; }
+				.element.Heartloom.large,
+				.element.Heartloom.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.Joules {width:245px; height:368px; }
+				.element.Joules.large,
+				.element.Joules.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.Liv {width:245px; height:368px; }
+				.element.Liv.large,
+				.element.Liv.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:750px;
+				}		
+				
+					.element.Liv2 {width:500px; height:333px; }
+						.element.Liv2.large,
+						.element.Liv2.large.width2.height2 {
+						  z-index: 100;
+						  background: #fff;
+						  float:left;
+						}			
+				
+				
+			.element.Quinn {width:245px; height:366px; }
+				.element.Quinn.large,
+				.element.Quinn.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+		
+			.element.Ramune {width:245px; height:367px; }
+				.element.Ramune.large,
+				.element.Ramune.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:750px;
+				}	
+				
+			.element.Britt {width:245px; height:245px; }
+				.element.Britt.large,
+				.element.Britt.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:500px;
+				}	
+				
+				
+			.element.Marie {width:245px; height:327px; }
+				.element.Marie.large,
+				.element.Marie.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:671px;
+				}	
+				
+				
+				.element.Marie2 {width:500px; height:375px; }
+					.element.Marie2.large,
+					.element.Marie2.large.width2.height2 {
+					  z-index: 100;
+					  background: #fff;
+					  float:left;
+					}			
+		
+		
+			.element.Maxtan {width:500px; height:309px; }
+				.element.Maxtan.large,
+				.element.Maxtan.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+				
+			.element.Terra {width:245px; height:368px; }
+				.element.Terra.large,
+				.element.Terra.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:356px;
+				}	
+				
+				
+				
+				
+				
+				
+			.element.Ashley {width:245px; height:313px; }
+				.element.Ashley.large,
+				.element.Ashley.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:644px;
+				}	
+				
+			.element.Marque {width:245px; height:371px; }
+				.element.Marque.large,
+				.element.Marque.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+				
+			.element.Rodriguez {width:245px; height:367px; }
+				.element.Rodriguez.large,
+				.element.Rodriguez.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				  width:500px; height:750px;
+				}	
+				
+				.element.Shae {width:500px; height:353px;}
+				.element.Shae.large,
+				.element.Shae.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}				
+						
+			.element.Ted {width:500px; height:376px; }
+				.element.Ted.large,
+				.element.Ted.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+				
+				
+				
+				
+				
+				
+			.element.clara {width:245px; height:313px; }
+				.element.clara.large,
+				.element.clara.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.graf {width:245px; height:184px; }
+				.element.graf.large,
+				.element.graf.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.marcia {width:245px; height:311px; }
+				.element.marcia.large,
+				.element.marcia.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}
+				
+			.element.nada {width:245px; height:307px; }
+				.element.nada.large,
+				.element.nada.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.namrata {width:245px; height:306px; }
+				.element.namrata.large,
+				.element.namrata.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.pono {width:245px; height:163px; }
+				.element.pono.large,
+				.element.pono.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.sorial {width:245px; height:170px; }
+				.element.sorial.large,
+				.element.sorial.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.stella {width:245px; height:253px; }
+				.element.stella.large,
+				.element.stella.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.tko {width:500px; height:333px; }
+				.element.tko.large,
+				.element.tko.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.zeffira {width:245px; height:122px; }
+				.element.zeffira.large,
+				.element.zeffira.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.george {width:500px; height:333px; }
+				.element.george.large,
+				.element.george.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.theia {width:245px; height:312px; }
+				.element.theia.large,
+				.element.theia.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.seasonal {width:500px; height:333px; }
+				.element.seasonal.large,
+				.element.seasonal.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.dean {width:245px; height:245px; }
+				.element.dean.large,
+				.element.dean.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.sogoli {width:245px; height:245px; }
+				.element.sogoli.large,
+				.element.sogoli.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+				
+			.element.shay {width:245px; height:305px; }
+				.element.shay.large,
+				.element.shay.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}		
+																				
+						
+		
+		
+		
+		
+		
+		
+		
+		
+			.element.testSm {width:245px; height:369px; }
+				.element.testSm.large,
+				.element.testSm.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}
+				
+			.element.testLg {width:500px; height:300px; }
+				.element.testLg.large,
+				.element.testLg.large.width2.height2 {
+				  z-index: 100;
+				  background: #fff;
+				  float:left;
+				}	
+
+		
+		.isotope-item { display: block;}
+		.isotope-hidden { display: none; }
+		
+		
+		
+		
+		
+/* Fixed Footer */
+
+#footer{
+	position:fixed;
+	bottom:0px;
+	height:30px;
+	width:100%;
+	background:url(../img/stripe_bg.gif) repeat;
+	font-family: 'GBook', Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#cccccc;
+	z-index:99999999;
+	display:block;
+	text-transform:uppercase;
+	line-height:17px;
+}
+
+	#footer #lFoot{ margin:7px 0 0 35px; float:left; text-align:left;}
+	#footer #rFoot{ margin:7px 35px 0 0; float:right; text-align:right;}
+	
+	#footer a:link, #footer a:visited {text-decoration:none; color:#cccccc;}
+	#footer a:hover {text-decoration:none; color:#ee1c24;}
+
+	.foot_space {margin: 0 0 0 15px;}
+	.foot_space2 {margin: 0 0 0 10px;}
+	.foot_enk {color:#ee1c24;}
+	
+	
+
+
+/**** Infinite Scroll ****/
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+
+
+.clickable .element:hover, .clickable .element2:hover, .clickable .text:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3, .clickable .element2:hover h3, .clickable .text:hover h3 {
+  text-shadow:
+    0 0 10px white,
+    0 0 10px white;
+}
+
+.clickable .element:hover h2, .clickable .element2:hover h2, .clickable .text:hover h2 {
+  color: white;
+}
+
+
+
+
+/* ==|== font styles =====================================================
+   Nobel
+   ========================================================================== */
+
+@font-face {
+    font-family: 'GBold';
+    src: url('../../../font/g-bold.otf-webfont.eot');
+    src: url('../../../font/g-bold.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/g-bold.otf-webfont.woff') format('woff'),
+         url('../../../font/g-bold.otf-webfont.ttf') format('truetype'),
+         url('../../../font/g-bold.otf-webfont.svg#GBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GBook';
+    src: url('../../../font/g-book.otf-webfont.eot');
+    src: url('../../../font/g-book.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/g-book.otf-webfont.woff') format('woff'),
+         url('../../../font/g-book.otf-webfont.ttf') format('truetype'),
+         url('../../../font/g-book.otf-webfont.svg#GBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GLight';
+    src: url('../../../font/g-light.otf-webfont.eot');
+    src: url('../../../font/g-light.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/g-light.otf-webfont.woff') format('woff'),
+         url('../../../font/g-light.otf-webfont.ttf') format('truetype'),
+         url('../../../font/g-light.otf-webfont.svg#GLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GMedium';
+    src: url('../../../font/g-medium.otf-webfont.eot');
+    src: url('../../../font/g-medium.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/g-medium.otf-webfont.woff') format('woff'),
+         url('../../../font/g-medium.otf-webfont.ttf') format('truetype'),
+         url('../../../font/g-medium.otf-webfont.svg#GMedium') format('svg');
+    font-weight:normal;
+    font-style: normal;
+
+}
+	
+@font-face {
+    font-family: 'LabtopUnicaseRegular';
+    src: url('../../../font/labtopu_-webfont.eot');
+    src: url('../../../font/labtopu_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/labtopu_-webfont.woff') format('woff'),
+         url('../../../font/labtopu_-webfont.ttf') format('truetype'),
+         url('../../../font/labtopu_-webfont.svg#LabtopUnicaseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>ENK INTERNATIONAL | Form Data Viewer</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/libs/modernizr-2.5.2.min.js"></script>
+         
+   <!-- FORM LINKS -->
+     <link rel="stylesheet" href="css/form.css">
+	<script src="js/jquery-1.2.3.pack.js"></script>
+    <script src="js/runonload.js"></script>
+    <script src="js/form.js"></script>
+
+
+  <!-- <link href="/table-sort/css/demo.css" rel="stylesheet" type="text/css"> -->
+    
+</head>
+<body>
+    
+    <div id="wrapper">
+    
+        <!-- Admin Form Module -->     
+            <div id="adminForm" class="module">
+                    <h1>Form Admin</h1>
+                    <h2>Choose a form</h2>
+                    <div class="desc-lg">
+                    To view current submitted data, select the form and click "View".
+                    </div>
+                         <div class="module-content">
+
+                         
+                            <div id="admin_form">
+                            
+                                 <form id="adminForm" method="post" action="">
+                                 <fieldset>
+    
+                                        <select name="formName" id="formName"  class="text-input">
+                                                <option value="applyForm" selected="selected">Apply Form</option>
+                                                <option value="pressForm">Press Form</option>
+                                                <option value="contactForm">Contact Form</option>
+                                        </select>
+                                        
+                                        <br>
+                                        
+                                        <input type="button" name="submit" class="button" id="adminForm_button" value="View" />
+                                        
+                                    
+                                </fieldset>
+                                </form>
+                                
+                            </div> <!-- END admin_form --> 
+                                
+                            <div id="adminForm_message_box">
+                            
+
+
+								<div id="txtHint">
+                                <br>
+                                <b>data will be shown here.</b>
+                                
+                                </div>
+
+                                <div id="adminForm_message" class="error">messages will be shown here.</div>
+                            </div>  <!-- END adminForm_message_box --> 
+                        
+
+
+
+                        </div> <!-- END module-content --> 
+
+           <!--
+            <div class="module">
+
+                            <form>
+                            <select name="users" onchange="showUser(this.value)">
+                            <option value="">Select a person:</option>
+                            <option value="1">Peter Griffin</option>
+                            <option value="2">Lois Griffin</option>
+                            <option value="3">Glenn Quagmire</option>
+                            <option value="4">Joseph Swanson</option>
+                            </select>
+                            </form>
+                            <br />
+                            <div id="txtHint"><b>Person info will be listed here.</b></div>
+			-->
+                        </div> <!-- END module-content --> 
+
+                    
+             </div> <!-- END Admin Form Module -->        
+    
+    </div><!-- end wrapper-->
+
+	<script type="text/javascript" src="js/tablesort.js"></script>
+
+
+</body>
+</html>
+    

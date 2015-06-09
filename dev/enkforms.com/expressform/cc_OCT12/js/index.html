@@ -1,0 +1,3783 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+ <script language="JavaScript" src="js/ccformcalculations_OCT12.js" type="text/javascript"></script>
+ <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+ <script language="JavaScript" src="js/ccfurniture.js" type="text/javascript"></script>
+<style>
+.font0
+	{color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;}
+	
+.font8
+	{color:black;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;}
+	
+.font9
+	{color:black;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;}
+	
+.font17
+	{color:red;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	vertical-align:bottom}
+	
+.fontred
+	{color:red;
+	font-size:13.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	text-align:left;
+	font-family:"Arial Black", sans-serif;}
+	
+.item
+   {
+	color:black;
+	font-size:11.0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	font-family:Calibri, sans-serif;
+}
+
+.itemcarp
+   {
+	color:black;
+	font-size:10.0pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	font-family:Calibri, sans-serif;
+}
+	
+.itemred
+   {color:red;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	font-family:Calibri, sans-serif;}
+	
+.furn
+   {color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	font-family:Calibri, sans-serif;}	
+	
+.boothinfo
+   {color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	vertical-align:left;
+	font-family:Arial, sans-serif;}
+	
+.money
+   {color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:right;
+	font-family:Calibri, sans-serif;}	
+	
+.itemhead
+   {color:black;
+	font-size:12.0pt;
+	font-style:normal;
+	font-weight:700;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;}
+	
+.dropdown
+    {color:black
+	 font-size:7.0pt;
+	 font-family:Arial;
+	 text-align:left;}
+	
+.address
+   {color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	text-align:left;}
+
+.title
+	{color:black;
+	font-size:18.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	vertical-align:middle;}
+
+.title_red
+	{color:red;
+	font-size:18.0pt;
+	font-weight:700;
+	font-family:"Arial Black", sans-serif;
+	text-align:right;
+	vertical-align:middle;}	
+
+.title_reverse
+	{color:white;
+	font-size:10.0pt;
+	font-weight:700;
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	font-family:Verdana, Geneva, sans-serif;
+	background:black;
+	vertical-align:middle;}
+	
+td
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;}
+</style>
+</head>
+
+<body link="#CC0000" vlink="#993366" onload = "NoBoothSize()">
+<form name= "myform" id= "CC" onSubmit="checkform()" method="post" action="send_cc.php" >
+
+<table align="center" border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>
+  <col width=5>
+  <col width=10>
+  <col width=50>
+  <col width=350>
+  <col width=130>
+  <col width=50>
+  <col width=300>
+  <col width=210>
+  <col width=30>
+ <tr height=15>
+   <td  colspan="9" align="center"><p align="center"><img src="images/cc_header_oct12.jpg" width="1150"  alt="CC Header"></p></td>
+ </tr>
+ <tr height=27>
+  <td></td>
+  <td class=title colspan=4><a name="Print_Area">Order Form</a></td>
+  <td colspan=4 class=title_red style="text-align:right" >Deadline Date: October 3, 2012</td>
+ </tr>
+ <tr height=75>
+  <td>&nbsp;</td>
+  <td colspan=8 class=item style="text-align:justify">Thank you for using this Express Order Form. More detailed information about the items below and about the show in general can be found in the Exhibitior 
+  Guide Book. Orders for wall mounted items MUST be accompanied by a diagram, 
+  click the Diagram Required link, select your booth size, complete and fax to GES. All orders are subject to the GES pricing, deadlines, 
+  surcharges, terms and conditions as indicated. Do not duplicate your order by either resubmitting the Express Order form or by completing similar forms from the GuideBook.  If you do so, your order will be duplicated and your will be charged twice.</td>
+ <tr height=12>
+  <td  height=12>&nbsp;</td>
+  <td colspan=8 class=font17></td>
+ </tr>
+ </tr>
+ <tr height=12>
+  <td  height=12>&nbsp;</td>
+  <td colspan=8 class=itemhead>Click underlined words below for images or other additional information</td>
+ </tr>
+  <tr height=12>
+  <td  height=12>&nbsp;</td>
+  <td colspan=8 class=font17></td>
+ </tr>
+ <tr height=24>
+  <td  height=24>&nbsp;</td>
+  <td colspan=8 class=font17>ORDER TYPE:&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="ordertype" id="ordertype" value="" align="top" checked> NEW ORDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="ordertype" id="ordertype" value="REVISED ORDER" align="top"> REVISED ORDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </td>
+ </tr>
+   <tr height=12>
+  <td  height=12>&nbsp;</td>
+  <td colspan=8 class=font17></td>
+ </tr>
+ 
+ <tr height=24>
+  <td height=24>&nbsp;</td>
+  <td colspan=8 class=title_reverse style="border-right:1.0pt solid black">&emsp;CHOOSE YOUR BOOTH SIZE</td>
+ </tr>
+ <tr height=15>
+  <td>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=18>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2 class=item>Please Choose Your Booth Size</td>
+  <td colspan=5 class=itemred style="vertical-align:middle;border-right:1.0pt solid black"><input type="checkbox" name="donot1" value="I DO NOT require a furnishings package">
+      I DO NOT require a furnishing package</td>  
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class="dropdown" colspan=2>
+    <select id="boothsizer" name="boothsizer" size="1" onChange="calculateTotal()">
+      <option value="0">-</option>
+      <option value="1">5'D x 15'W</option>
+      <option value="2">5'D x 16'W</option>
+      <option value="3">5'D x 20'W</option>
+      <option value="4">6'D x 6'W</option>
+      <option value="5">6'D x 10'W</option>
+      <option value="6">6'D x 13'W</option>
+	  <option value="7">6'D x 15'W</option>
+      <option value="8">6'D x 16'W</option>
+      <option value="9">6'D x 20'W</option>
+      <option value="10">6'D x 23'W</option>
+      <option value="11">6'D x 26'W</option>
+      <option value="12">6'D x 30'W</option>
+      <option value="13">6'D x 33'W</option>
+      <option value="14">6'D x 36'W</option>
+      <option value="15">6'D x 40'W</option>
+      <option value="16">8'D x 10'W</option>
+      <option value="17">10'D x 6'W</option>
+      <option value="18">10'D x 8'W</option>
+      <option value="19">10'D x 10'W</option>
+      <option value="20">10'D x 13'W</option>
+      <option value="21">10'D x 15'W</option>
+      <option value="22">10'D x 16'W</option>
+      <option value="23">10'D x 20'W</option>
+      <option value="24">10'D x 23'W</option>
+      <option value="25">10'D x 26'W</option>
+      <option value="26">10'D x 30'W</option>
+      <option value="27">10'D x 33'W</option>
+      <option value="28">10'D x 36'W</option>
+      <option value="29">10'D x 40'W</option>
+      <option value="30">13'D x 10'W</option>
+      <option value="31">15'D x 20'W</option>
+      <option value="32">16'D x 10'W</option>
+	  <option value="41">16'D x 16'W</option>
+      <option value="42">16'D x 26'W</option>
+      <option value="33">20'D x 13'W</option>
+      <option value="34">20'D x 16'W</option>
+      <option value="35">20'D x 20'W</option>
+      <option value="36">20'D x 23'W</option>
+      <option value="37">20'D x 26'W</option>
+      <option value="38">20'D x 30'W</option>
+      <option value="39">20'D x 40'W</option>
+      <option value="40">20'D x 50'W</option>
+    </select>
+  </td>
+  <td colspan=5 class=itemred style="border-right:1.0pt solid black"> <input type="checkbox" name="donot2" value="I DO NOT require booth walls">     
+    I DO NOT require booth walls</td>
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td>
+      <input type="hidden" name="subtotalval" id="subtotalval">
+      <input type="hidden" name="pstval" id="pstval">
+      <input type="hidden" name="pstsubtotalval" id="pstsubtotalval">
+      <input type="hidden" name="taxval" id="taxval">
+      <input type="hidden" name="totalval" id="totalval">
+      <input type="hidden" name="etaxval" id="etaxval">
+      <input type="hidden" name="etotalval" id="etotalval">
+      <input type="hidden" name="esubtotalval" id="esubtotalval">
+      <input type="hidden" name="bssubtotalval" id="bssubtotalval">
+      <input type="hidden" name="bstaxval" id="bstaxval">
+      <input type="hidden" name="bstotalval" id="bstotalval">
+      <input type="hidden" name="Wall_Info" id="Wall_Info">
+      <input type="hidden" name="booth_size" id="booth_size">
+      <input type="hidden" name="square_feet" id="square_feet">
+      <input type="hidden" name="Carpet_Type" id="Carpet_Type">
+      <input type="hidden" name="furnallowed" id="furnallowed">
+      <input type="hidden" name="Paper_Feet" id="Paper_Feet">
+      <input type="hidden" name="light_pkg" id="light_pkg">
+      <input type="hidden" name="power_pkg" id="power_pkg">
+      <input type="hidden" name="PPInfo" id="PPInfo">
+      <input type="hidden" name="mtaxval" id="mtaxval">
+      <input type="hidden" name="mtotalval" id="mtotalval">
+      <input type="hidden" name="msubtotalval" id="msubtotalval">
+	  <input type="hidden" name="payauth" id="payauth" value="okay">
+      </td>
+  <td class=itemred colspan=5 style="border-right:1.0pt solid black">
+    <input type="checkbox" name="donot3" value="I DO NOT require framework (you will not be able to hang lights)">
+    I DO NOT require framework (you will not be able to hang lights)
+  </td>
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>  
+  <td colspan=2></td>
+  <td colspan=2></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=15>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>  
+  <td colspan=2></td>
+  <td colspan=2></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=15>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>  
+  <td colspan=2></td>
+  <td colspan=2></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td colspan=8 style="border-left:1.0pt solid black;border-bottom:1.0pt solid black;border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=7>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr> 
+
+ 
+ <tr height=7>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=24>
+  <td height=24>&nbsp;</td>
+  <td colspan=8 class=title_reverse style="border-right:1.0pt solid black">&emsp;Furnishings Provided by ENK</td>
+ </tr>
+<tr height=12>
+   <td>&nbsp;</td>
+   <td style="border-left:1.0pt solid black;"></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ <tr height=45>
+   <td>&nbsp;</td>
+   <td style=' border-left: 1.0pt solid black;'>&nbsp;</td>
+   <td colspan=6 class=item  align="justify">In addtion to hardwall booth structure, gray carpeting, wastebasket, and ID sign provided by ENK, you may
+  select the following furnishings packages based on your booth size at no additional charge. In order to receive the ENK Booth Package furnishings, you must complete and return this page by the deadline; otherwise you will receive the booth framework, panels, and lights, but you will not receive booth furnishings. 
+  </td>
+  <td style='border-right:1.0pt solid black;'></td>
+ </tr>
+ <tr height=7>
+   <td>&nbsp;</td>
+   <td style="border-left:1.0pt solid black;"></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ <tr height=16>
+  <td></td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td class=itemhead colspan=3><a href="images/Package_Furnishings.jpg" target="_blank">Booth Package Furnishings (click for images)</a></td><td colspan=2>Please enter the quantity for each item</td>
+  <td>&nbsp;</td>
+  <td style=" border-right:1.0pt solid black;">&nbsp;</td>  
+ </tr>
+ 
+ <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 ></td>
+   <td class=furn>
+    <input name="chair" id="chair" type="text" size="2" maxlength="2" value="0" onChange="FurnCount()" />
+  </td>
+  <td class=furn colspan=2>White Chair</td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ 
+<tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 class=itemred ><div id="Boothinfo1"></div></td>
+  <td class=furn>
+    <input name="table4" id="table4" type="text" size="2" maxlength="2" value="0" onChange="FurnCount()" />
+  </td>
+  <td class=furn colspan=2>4' Undraped Table</td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr> 
+ 
+ <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 class=itemred ><div id="Boothinfo2"></div></td>
+  <td class=furn>
+    <input name="table6" id="table6" type="text" size="2" maxlength="2" value="0" onChange="FurnCount()"/>
+  </td>
+  <td class=furn colspan=2>6' Undraped Table</td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr> 
+ 
+ <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 class=itemred ><div id="Boothinfo3"></div></td>
+  <td class=furn>
+    <input name="rack" id="rack" type="text" size="2" maxlength="2" value="0" onChange="FurnCount()"/>
+  </td>
+  <td class=furn colspan=2>Free Standing Garment Rack</td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr> 
+ 
+  <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 class=itemred ><div id="Boothinfo3a"></div></td>
+  <td class=furn>
+    <input name="grid" id="grid" type="text" size="2" maxlength="2"  value="0" onChange="FurnCount()"/>
+  </td>
+  <td class=furn colspan=2>Grid (2' wide x 8' high)</td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr> 
+ 
+ <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 class=itemred ></td>
+  <td class=furn>
+    <input name="shelfst" id="shelfst" type="text" size="2" maxlength="2" value="0" onChange="FurnCount()"/>
+  </td>
+  <td class=furn colspan=2>Shelf straight white <font class="font9">(installed at 5' height unless indicated. Diagram required)</font></td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+
+ <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;"></td>
+  <td colspan=3 class=itemred><div id="Boothinfo4"></div></td>
+  <td class=furn>
+    <input name="shelfsl" id="shelsl" type="text" size="2" maxlength="2" value="0" onChange="FurnCount()"/>
+  </td>
+  <td class=furn colspan=2>Shelf slanted white <font class="font9">(installed at 5' height unless indicated. Diagram required)</font></td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+
+
+ <tr height=21>
+   <td>&nbsp;</td>
+   <td style="border-left:1.0pt solid black;"></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+  <tr height=21>
+   <td>&nbsp;</td>
+   <td style="border-left:1.0pt solid black;"></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td><div id="totalfurn"></div></td>
+   <td class=itemhead>TOTAL PIECES </td>
+   <td></td>
+   <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ <tr height=21>
+   <td>&nbsp;</td>
+   <td style="border-left:1.0pt solid black;"></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td></td>
+   <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+
+ <tr height=34>
+  <td height=34>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;">&nbsp;</td>
+  <td class=itemhead colspan=5>Light / Electrical Package&emsp;&emsp;Select either light package or electrical package (not both).</td>
+  <td>&nbsp;</td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ <tr height=24>
+  <td height=24>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;">&nbsp;</td>
+  <td class=furn colspan=2><input type="radio" name="powerpack" id="light" value="light" onClick="calculateTotal()" >&emsp;Light Package</td>
+  <td></td>
+  <td></td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ <tr height=24>
+  <td height=24>&nbsp;</td>
+  <td style="border-left:1.0pt solid black;">&nbsp;</td>
+  <td class=furn colspan=4><input type="radio" name="powerpack" id="elec" value="elec" onClick="calculateTotal()">
+  &emsp;Electrical Package - <a href="pdfs/Light_Power_Placement.pdf" target="_blank">Must submit diagram for power drop location</a></td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td style=" border-right:1.0pt solid black;"></td>
+ </tr>
+ <tr height=5>
+  <td height=5></td>
+  <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+ </tr>
+ <tr height=6>
+  <td></td>
+  <td colspan=8>&nbsp; </td>  
+ </tr>  
+ <tr height=11>
+  <td height=11></td>
+  <td colspan=7>&nbsp;</td>
+  <td></td>
+ </tr>
+ <tr height=24>
+  <td height=24>&nbsp;</td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&emsp;BoothSeal - Booth Security Products - For more information call 646-243-0811</td>
+ </tr>
+  <tr height=6>
+   <td></td>
+   <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+   <td colspan=2></td>
+   <td></td>
+   <td colspan=2>&nbsp;</td>
+   <td></td>
+   <td style='border-right:1.0pt solid black'></td>
+ </tr>
+
+ <tr height=20>
+   <td></td>
+   <td style='border-left: 1.0pt solid black'>&nbsp;</td>
+   <td colspan=2 class=itemhead align="left">Please click appropriate booth size.</td>
+   <td></td>
+   <td colspan=2>&nbsp;</td>
+   <td></td>
+   <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr>
+   <td height=15></td>
+   <td style="border-left:1.0pt solid black"></td>
+   <td colspan=2 class=itemhead>In-line Booth</td>
+   <td></td>
+   <td colspan=2 class=itemhead>Open Corner Booth</td>
+   <td></td>
+   <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td class=dropdown vertical-align="middle" text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="1">
+    </td>
+  <td colspan=2 class=item>6' x 10' in-line - $125 / $150 post deadline (1 BoothSeal included)</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+   <td></td>
+   <td style="border-left: 1.0pt solid black">&nbsp;</td>
+   <td class=item text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="2">
+   </td>
+   <td colspan=2 class=item>10' x 8' in-line - $125 / $150 post deadline (1 BoothSeal included)</td>
+   <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="7">
+   </td>
+  <td class=item colspan=2>10' x 8' open corner - $175 / $200 post deadline (2 BoothSeals included)</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=item text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="3">
+  </td>
+  <td colspan=2 class=item>10' x 10' in-line - $125 / $150 post deadline (1 BoothSeal included)</td>
+  <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="8">
+  </td>
+  <td class=item colspan=2>10' x 10' open corner - $175 / $200 post deadline (2 BoothSeals included)</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="4">
+  </td>
+  <td colspan=2 class=item>10' x 13' in-line - $150 / $175 post deadline (1 BoothSeal included)</td>
+  <td class=item text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="9">
+  </td>
+  <td colspan=2 class=item>10' x 13' open corner - $200 / $225 post deadline (2 BoothSeals included)</td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+   <td></td>
+   <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+   <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="5">
+   </td>
+   <td colspan=2 class=item>10' x 16' in-line - $150 / $175 post deadline (1 BoothSeal included)</td>
+   <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="10">
+   </td>
+  <td class=item colspan=2>10' x 16' open corner - $200 / $225 post deadline (2 BoothSeals included)</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+   <td></td>
+   <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+   <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="6">
+   </td>
+   <td colspan=2 class=item>10' x 20' in-line - $175 / $200 post deadline (2 BoothSeals included)</td>
+   <td class=dropdown text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="11">
+    </td>
+  <td class=item colspan=2>10' x 20' open corner - $225 / $250 post deadline (3 BoothSeals included)</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr>
+  <td height=8></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black" ></td>
+ </tr>
+ <tr height=15>
+   <td></td>
+   <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+   <td class=dropdown vertical-align="middle" text-align="center">
+    <input type="radio" name="BStype" id="BStype" value="0" checked>
+   </td>
+   <td colspan=2 class=item>I do not want to purchase a BoothSeal at this time.</td>
+   <td class=dropdown>
+    <select id="master" name='master' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+   </td>
+   <td class=item>Master Lock - $12 / $12 post deadline</td>
+   <td></td>
+   <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=8>
+ <td></td>
+   <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black" ></td>
+ </tr>
+ <tr><td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td colspan=2 class=item>Other sizes, please call BoothSeal for prices - 646-243-0811</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=5>
+  <td height=5></td>
+  <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+ </tr>
+ <tr height=17>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=17>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=7>
+  <td height=7></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>GES - Additional Booth Lighting - For more information call 800-801-0554 or 201-375-9191</td>
+ </tr>
+ <tr height=16>
+  <td height=16></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td colspan=2 class=itemhead align="left">
+     <a href="pdfs/Light_Power_Placement.pdf" title="Additional Tracks" target="_blank">Additional Tracks of Light (click for diagram)</a></td>
+  <td></td>
+  <td colspan=2 class=itemhead ><a href="pdfs/Light_Power_Placement.pdf" title="Additional Lights" target="_blank">Additional Lights (click for diagram)</a></td>
+   <td></td>
+   <td style='border-right:1.0pt solid black'></td>
+  
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td class=dropdown>
+    <select id="add_tracks1" name='add_tracks1' size="1" onChange="calculateTotal()">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item>1 track, 2 halogen lights - $351.00 / $458.00 afer deadline</td>
+  <td></td>
+  <td class=dropdown align="left">
+    <select id="add_lights1" name='add_lights1' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>1 halogen light fixtures (added to existing track) - $91.30 / $113.95 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td class=dropdown>
+    <select id="add_tracks2" name='add_tracks2' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+	</td>
+   <td class=item>1 track, 3 halogen lights - $377.40 / $472.40 after deadline </td>
+  <td></td>
+  <td class=dropdown>
+    <select id="add_lights2" name='add_lights2' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+    
+    </select>
+  </td>
+  <td class=item colspan=2>2 halogen light fixtures  (added to existing track) - $182.15 / $227.80 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select id="add_tracks3" name='add_tracks3' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item>1 track, 4 halogen lights - $421.00 / $526.70 post deadline</td>
+  <td></td>
+  <td class=dropdown>
+    <select id="add_lights3" name='add_lights3' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+     
+    </select>
+  </td>
+  <td class=item colspan=2>3 halogen light fixtures  (added to existing track) - $254.70 / $307.40 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select id="add_tracks4" name='add_tracks4' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item>1 track, 5 halogen lights - $476.30 / $595.15 post deadline</td>
+  <td></td>
+  <td class=dropdown></td>
+  <td class=item colspan=2></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select id="add_tracks5" name='add_tracks5' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item>1 track, 6 halogen lights - $545.40 / $681.90 post deadline</td>
+  <td></td>
+  <td class=dropdown></td>
+  <td class=item colspan=2></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+
+ <tr height=6>
+ <td></td>
+ <td height="29" style="border-left:1.0pt solid black"></td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td class=item >&nbsp;</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=5>
+  <td height=5></td>
+  <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+ </tr>
+   <tr height=7>
+  <td height=7></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>The Javits Center - Additional Electrical and Specialty Lighting - For more information call 877-452-8487</td>
+ </tr>
+<tr height=16>
+  <td height=16></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td colspan=2 class=itemhead align="left">
+     <a href="pdfs/Javits_Plan_Distribution.pdf" title="Javits Plan Distribution" target="_blank">Special Lights</a></td>
+  <td></td>
+  <td colspan=2 class=itemhead ><a href="pdfs/Javits_Plan_Distribution.pdf" title="Javits Plan Distribution" target="_blank">Electric Power</a><font color=black> 110 volt</font></td>
+   <td></td>
+   <td style='border-right:1.0pt solid black'></td>
+  
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td class=dropdown align="left">
+    <select id="spec_lights1" name='spec_lights1' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td colspan=2 class=item>1000 w Par Can Light (floor plan required) - $381 / $381 + Labor after deadline </td>
+  <td class=dropdown align="left">
+    <select id="epower1" name='epower1' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>500 watts of power - $99 / $131 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style=' border-left: 1.0pt solid black'>&nbsp;</td>
+  <td class=dropdown></td>
+   <td colspan=2 class=item>&nbsp;</td>
+  <td class=dropdown>
+    <select id="epower2" name='epower2' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </td>
+  <td class=item colspan=2>1000 watts of power - $170 / $235 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=3 class=itemhead align="left">
+    <a href="pdfs/Javits_Plan_Distribution.pdf" title="Javits Plan Distribution" target="_blank">Electric Equipment Connections</a><font color="#000000"> 110 volt</font></td>
+  
+  <td class=dropdown>
+    <select id="epower3" name='epower3' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>     
+    </select>
+  </td>
+  <td class=item colspan=2>1500 watts of power - $202/ $282 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+ <td height=15></td>
+ <td style="border-left:1.0pt solid black"></td>
+   <td class=dropdown>
+    <select id="epower6" name='epower6' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td colspan=2 class=item>2000 watts of power - $224 / $314</td>
+  <td class=dropdown>
+    <select id="epower4" name='epower4' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>     
+    </select>
+ </td>
+  <td class=item colspan=2>Multi Box (4 Outlets) - $32 / $44 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+ <td height=15></td>
+ <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select id="epower7" name='epower7' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td colspan=2 class=item>2500 watts of power - $297 / $404</td>  
+  <td class=dropdown>
+    <select id="epower5" name='epower5' size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>     
+    </select>
+  </td>
+  <td class=item colspan=2>Plug-in strip (8 Outlets) - $32 / $44 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr> 
+   <tr><td height=8></td>
+   <td style="border-left:1.0pt solid black">&nbsp;</td>
+
+  <td colspan=4 class=item>&nbsp;</td>
+  <td></td> 
+  <td>&nbsp;</td>
+  <td style="border-right:1.0pt solid black">&nbsp;</td>
+ </tr>
+ <tr><td height=8></td>
+   <td style="border-left:1.0pt solid black">&nbsp;</td>
+
+  <td colspan=4 class=item><input type="checkbox" name="elabor" align="right" value="On-Site Labor">&nbsp; I will need On-Site Labor for Electrical (Please complete credit card information below)</td>
+  <td></td> 
+  <td>&nbsp;</td>
+  <td style="border-right:1.0pt solid black">&nbsp;</td>
+ </tr>
+
+ <tr height=5>
+  <td height=5></td>
+  <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+ </tr>
+  <tr height=17>
+  <td  height=17></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr> 
+ <tr height=24>
+  <td height=24></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&emsp;GES Rental Furnishings - Price per Item - For more information call 800-801-0554 or 201-375-9191</td>
+ </tr>
+ <tr height=8>
+  <td height=8>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=25>
+  <td height=25>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=3 class=itemhead>Draped Wood Tables <font class=item>(price includes vinyl top &amp; 3 sides of draping)</font></td>
+  <td colspan=2 class=itemhead><a href="images/Misc-Furnishings.jpg" target="_blank">Miscellaneous Furnishings (click for images)</a></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_1" size="1">
+       <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15</option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>4’ long x 2’ wide x 30” high TABLE - $122.25 / $152.70 post deadline</td>
+  <td class=dropdown>
+    <select name="misc_furn1" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>White CHAIR<span class="item"> - $79.10 / $102.75 post deadline</span></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_2" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      
+    </select>
+  </td>
+  <td class=item colspan=2>6’ long x 2’ wide x 30” high TABLE - 141.20 / $176.50 post deadline</td>
+   <td class=dropdown>
+    <select name="misc_furn2" size="1">
+       <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15</option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>30” round TABLE<span class="item"> - $183.75 / $239.05 post deadline</span></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_3" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      
+    </select>
+  </td>
+  <td class=item colspan=2>8’ long x 2’ wide x 30” high TABLE - $165.50 / $206.70 post deadline</td>
+  <td class=dropdown>
+    <select name="misc_furn3" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>Wall MIRROR 12” x 48” - $67.70 / $88.05 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_4" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item colspan=2>4’ long x 2’ wide x 42” high COUNTER - $159.35 / $198.20 post deadline</td>
+  <td class=dropdown>
+    <select name="misc_furn4" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>Waste basket - $17.45 / $22.65 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_5" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item colspan=2>6’ long x 2’ wide x 42” high COUNTER - $179.05 / $223.95 post deadline</td>
+  <td class=dropdown>
+    <select name="misc_furn5" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>Chrome CLOTHES TREE - $38.45 / $49.65 post deadline</td>
+    <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_6" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>   
+    </select>
+  </td>
+  <td class=item colspan=2>8’ long x 2’ wide x 42” high COUNTER - $206.40 / $260.45 post deadline</td>
+  <td class=dropdown>
+    <select name="misc_furn6" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>Chrome GRID 2' x 8' - $70.40 / $87.95 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_7" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>     
+    </select>
+  </td>
+  <td class=item colspan=2>30&quot; 4th side table drape - $64.90 / $84.40 post deadline</td>
+    <td class=dropdown>
+    <select name="misc_furn7" size="1">
+     <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>Standing GARMENT RACK - $94.05 / $122.35 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="dr_tr_8" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    
+    </select>
+  </td>
+  <td class=item colspan=2>42&quot; 4th side table drape - $97.35 / $121.90 post deadline</td>
+  <td class=dropdown>
+    <select name="misc_furn8" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>3-meter CROSS BAR (lighting
+  support) - $72.50 / $94.30 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=6>
+  <td height=6></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td class=item>SELECT DRAPE COLOR&emsp;<select name="dr_color" size="1">
+      <option value="0">-</option> 
+      <option value="Black">Black</option>
+      <option value="Grey">Grey</option>
+      <option value="White">White</option>
+      </select>
+  </td>
+  <td></td>
+    <td class=dropdown>
+    <select name="misc_furn9" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td colspan=2 class=item>GRID HOOKS - $2.70 / $2.70 afer deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=25>
+  <td height=25>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=3 class=itemhead><a href="images/undraped_table.jpg" target="_blank">Undraped Wood Tables and Risers (click for image)</a></td>
+  <td colspan=3 class=itemhead>Dressing Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="pdfs/wall_configuration.pdf" target="_blank">DIAGRAM REQUIRED</a></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="tr_1" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item colspan=2>4&rsquo; long x 2&rsquo; wide x 30&rdquo; high TABLE - $45.85 / $59.60 post deadline</td>
+    <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+      <select name="dressing1" size="1">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4 </option>
+        <option value="5">5 </option>
+        <option value="6">6 </option>
+        <option value="7">7 </option>
+        <option value="8">8 </option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </span></td>
+  <td class=item colspan=2><span class="item">1 wall panel + 1 side draping - $282.90 / $367.75 post deadlne</span></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+    <select name="tr_2" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      
+    </select>
+  </span></td>
+  <td class=item colspan=2>6’ long x 2’ wide x 30” high TABLE - $56.50 / $73.40 post deadline</td>
+  <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+    <select name="dressing2" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </span></td>
+  <td class=item colspan=2>2 wall panels + 1 side draping - $477.00 / $620.40 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="tr_3" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      
+    </select>
+  </td>
+  <td class=item colspan=2>8’ long x 2’ wide x 30” high TABLE - $67.70 / $88.10 post deadline</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="tr_4" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item colspan=2>4’ long x 2’ wide x 42” high COUNTER - $65.60 / $85.25 post deadline</td>
+  <td colspan=3 class=itemhead>Additional Wall Panels
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <a href="pdfs/wall_configuration.pdf" target="_blank">DIAGRAM REQUIRED</a></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="tr_5" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item colspan=2>6’ long x 2’ wide x 42” high COUNTER - $79.10 / $102.75 post deadline</td>
+   <td class=dropdown>
+    <select name="wall_pan1" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>Additional WALL PANELS - $216.35 / $281.35 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="tr_6" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>   
+    </select>
+  </td>
+  <td class=item colspan=2>8’ long x 2’ wide x 42” high COUNTER - $89.60 / $116.55 post deadline</td>
+ <td class="dropdown">
+   <select name="wall_pan2" size="1">
+     <option value="0">0</option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4 </option>
+     <option value="5">5 </option>
+     <option value="6">6 </option>
+     <option value="7">7 </option>
+     <option value="8">8 </option>
+     <option value="9">9</option>
+     <option value="10">10</option>
+     <option value="11">11</option>
+     <option value="12">12</option>
+   </select>
+ </td>
+ <td colspan=2 class=item>Lockable DOOR - $410.90 / $534.00 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+    <td class=dropdown>
+    <select name="tr_7" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>     
+    </select>
+  </td>
+  <td class=item colspan=2>4’ long x 1’ wide x 1’ high RISER - $30.45 / $39.60 post deadline</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+<td class=dropdown>
+    <select name="tr_8" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    
+    </select>
+  </td>
+  <td class=item colspan=2>6’ long x 1’ wide x 1’ high RISER - $37.65 / $49.05 post deadline</td>
+   <td colspan=3 class=itemhead><a href="images/wall_colors.png" target="_blank">Wallpaper</a> / <a href="images/panel_colors.png" title="Panel Colors" target="_blank">Color Panels (click for image)</a></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td colspan=3 class=item>Choose <input type="checkbox" name="wallpaper" value="Wall Paper ">
+    Wallpaper OR  
+    <input type="checkbox" name="panel" value="Color Panel">
+    Color Panels&nbsp;&nbsp;- $15.80 per linear foot / $21.35 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=16>
+  <td height=16></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=3 class=itemhead><a href="images/Wall-Mounted.jpg" target="_blank">Wall Mounted Items</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="pdfs/booth_configuration.pdf" target="_blank">DIAGRAM REQUIRED</a></td>
+  <td colspan=3 class=item>Indicate color:
+  <select name="add_wall" size="1">
+    <option value="-">-</option>
+    <option value="black">black</option>
+    <option value="white">white - wall paper only</option>
+    <option value="charcoal">charcoal</option>
+    <option value="aluminum">aluminum </option>
+    <option value="cream">cream</option>
+    <option value="thistle">thistle - wall paper only</option>
+    <option value="forsythia">forsythia  - wall paper only</option>
+    <option value="sand">sand  - wall paper only</option>
+    <option value="pink">pink  - wall paper only</option>
+  </select>
+  </td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="wm1" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+      <option value="17">17 </option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21 </option>
+      <option value="22">22 </option>
+      <option value="23">23 </option>
+      <option value="24">24 </option>
+      <option value="25">25 </option>
+      <option value="26">26 </option>
+      <option value="27">27 </option>
+      <option value="28">28 </option>
+      <option value="29">29 </option>
+      <option value="30">30 </option>     
+    </select>
+  </td>
+  <td class=item colspan=2>Flat SHELF 14” x 39&frac34;” <font
+  class=font7>(1 meter)</font> - $65.00 / $84.50 post deadline</td>
+  <td colspan=3 class=item>Indicate length of each wall below</td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+  <td class=dropdown>
+    <select name="wm2" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+      <option value="17">17 </option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21 </option>
+      <option value="22">22 </option>
+      <option value="23">23 </option>
+      <option value="24">24 </option>
+      <option value="25">25 </option>
+      <option value="26">26 </option>
+      <option value="27">27 </option>
+      <option value="28">28 </option>
+      <option value="29">29 </option>
+      <option value="30">30 </option>     
+    </select>
+  </td>
+  <td class=item colspan=2>Slanted SHELF 9&frac34;” x 39&frac34;” <font
+  class=font7>(1 meter)</font> - $65.00 / $84.50 post deadline</td>
+  <td colspan=3 class=item>LEFT wall:
+    <select name="l_wall" size="1" onChange="calculateTotal()">
+    <option value=0>-</option>
+    <option value=5>5&rsquo;</option>
+    <option value=6>6&rsquo;</option>
+    <option value=10>10&rsquo;</option>  
+    <option value=20>20&rsquo;</option>
+    </select>
+  <font class=item>&nbsp;&nbsp;&nbsp;RIGHT wall</font>
+    <select name="r_wall" size="1" onChange="calculateTotal()">
+    <option value=0>-</option>
+    <option value=5>5&rsquo;</option>
+    <option value=6>6&rsquo;</option>
+    <option value=10>10&rsquo;</option>  
+    <option value=20>20&rsquo;</option>
+    </select><font class=item>&nbsp;&nbsp;&nbsp;BACK wall</font><span style="font-size:7.0pt;font-family:Arial">
+    <select name="b_wall" size="1" onChange="calculateTotal()">
+    <option value=0>-</option>
+    <option value=6>6&rsquo;</option>
+    <option value=10>10&rsquo;</option>
+    <option value=13>13&rsquo;</option>
+    <option value=16>16&rsquo;</option>  
+    <option value=20>20&rsquo;</option>
+    <option value=23>23&rsquo;</option>
+    <option value=26>26&rsquo;</option>
+    <option value=30>30&rsquo;</option>
+    <option value=33>33&rsquo;</option>
+    <option value=36>36&rsquo;</option>
+    <option value=40>40&rsquo;</option>
+    <option value=50>50&rsquo;</option>
+    </select>
+  </span></td>
+  <td style='border-right:1.0pt solid black'></td>
+  </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+  <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+    <select name="wm3" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+      <option value="17">17 </option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21 </option>
+      <option value="22">22 </option>
+      <option value="23">23 </option>
+      <option value="24">24 </option>
+      <option value="25">25 </option>
+      <option value="26">26 </option>
+      <option value="27">27 </option>
+      <option value="28">28 </option>
+      <option value="29">29 </option>
+      <option value="30">30 </option>     
+    </select>
+  </span></td>
+  <td class=item colspan=2>1-meter GARMENT RACK - $97.45 / $126.70 post deadline</td>
+  <td class=item colspan=2><div id="Paper_Panel_Info"></div></td>
+  <td></td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+  <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+    <select name="wm4" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+      <option value="17">17 </option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21 </option>
+      <option value="22">22 </option>
+      <option value="23">23 </option>
+      <option value="24">24 </option>
+      <option value="25">25 </option>
+      <option value="26">26 </option>
+      <option value="27">27 </option>
+      <option value="28">28 </option>
+      <option value="29">29 </option>
+      <option value="30">30 </option>     
+    </select>
+  </span></td>
+  <td colspan=2 class=item>1-meter DISPLAY BAR - $93.05 / $120.95 post deadline</td>
+  <td colspan=2><span class=dropdown>
+    <input type="checkbox" name="install" value="My walls WILL be papered by "></span>
+    <span class=item>My walls WILL be papered by outside installer</span></td>
+  <td></td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+  <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+    <select name="wm5" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </span></td>
+  <td colspan=2 class=item>Additional Shelf Bracket - $11.90 / $11.90 post deadline</td>
+  <td class=item colspan=3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Installation company<span class="dropdown">
+    <input type="text" name="EACinstall" size="40" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+  </span></td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td colspan=2>&nbsp;</td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+   <td colspan=3 class=itemhead>Booth Package Table Drape</td>
+  <td colspan=2 class=itemhead><a href="images/autopoles.jpg" title="Auto-Poles Order Form" target="_blank">Autopoles (click for image)</a></td>
+  
+  <td></td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+   <td class=dropdown>
+    <select name="drape4" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item>4' long x 2' wide x 30" high - $58.25 / $73.00 post deadline</td>
+  <td></td>
+  <td class=dropdown>
+    <select name="autopoles1" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+     
+    </select>
+  </td>
+  <td class=item colspan=2>5&rsquo; Single Cross Bar Setup - $313.15 / $407.00 post deadline</td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=16>
+  <td height=16></td>
+    <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="drape6" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </td>
+  <td class=item colspan=2>6' long x 2' wide x 30" high - $89.90 / $111.25 post deadline</td>
+  
+  <td class=dropdown>
+    <select name="autopoles2" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+   
+    </select>
+  </td>
+  <td class=item colspan=2>10&rsquo; Single Cross Bar Setup - $313.15 / $407.00 post deadline</td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style='border-left:1.0pt solid black'></td>
+  <td class="dropdown">&nbsp;</td>
+  <td class=item colspan=2>SELECT DRAPE COLOR&emsp;
+   <select name="drape_only_color" size="1">
+     <option value="0">-</option>
+     <option value="1">Black</option>
+     <option value="2">Grey</option>
+     <option value="3">White</option>
+    </select></td>
+   <td class=dropdown>
+    <select name="autopoles3" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      </select>
+  </td>
+  <td class=item colspan=2>5&rsquo; Double Cross Bar Setup -  $407.00 / $529.15 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+  </tr>
+  <tr height=15>
+  <td ></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown></td>
+  <td></td>
+  <td></td>
+  <td class=dropdown>
+    <select name="autopoles4" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item colspan=2 >10&rsquo; Double Cross Bar Setup -  $407.00 / $529.15 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>&nbsp;</td>
+  <td colspan=2 class=item>&nbsp;</td>
+  <td class=dropdown><span style="font-size:7.0pt;font-family:Arial">
+    <select name="autopoles5" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </span></td>
+  <td class=item colspan=2 >1M Four Shelf Auto-pole Package -  $259.50 / $337.80 post deadlinee</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=7>
+  <td height=7></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=itemhead colspan=2><a href="images/EZ-Shelves.jpg" title="EZ Shelf" target="_blank">EZ-Shelf (click for image)</a></td>
+  <td></td>
+  <td class="dropdown">
+    <select name="autopoles6" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td class=item colspan=2>1.5 M Four Shelf Auto-pole Package -  $389.65 / $507.05 post deadlinee</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=7>
+  <td height=7></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td style="text-align:left" class="dropdown">
+    <select name="ez1" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td colspan=2 class=item>Single EZ-Shelf 11.75”x31” shelves-72” Tall &nbsp;&nbsp;&nbsp;&nbsp;&thinsp;&thinsp;
+    <input type="radio" name="ez_white" value="white">
+    <font class=item>White&nbsp;&nbsp;</font>
+    <input type="radio" name="ez_white" value="maple">Maple
+  </td>
+  <td class=dropdown>
+    <select name="autopoles7" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+  </td>
+  <td class=item colspan=2>Additional Flat Shelf 9-3/4&rdquo; x 1 Meter Shelf -  $65.00 / $84.50 post deadline</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr>
+  <td height="7"></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td>&nbsp;</td>
+  <td><span class="item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$118.15 / $155.00 post deadline</span></td>
+  <td></td>
+  <td class=dropdown>
+    <select name="autopoles8" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td height="7" colspan=2 class=item>Additional Flat Shelf 9-3/4&rdquo; x 1.5 Meter Shelf -  $97.45 / $126.90 post deadline</td>
+  <td height="7" style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td class=dropdown>
+    <select name="ez2" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13 </option>
+      <option value="14">14 </option>
+      <option value="15">15 </option>
+      <option value="16">16 </option>
+    </select>
+  </td>
+  <td colspan=2 class="item">Double EZ-Shelf 11.75”x58” shelves-72” Tall &nbsp;&nbsp;&nbsp;&nbsp; 
+    <input type="radio" name="ez_double_white" value="white">
+  <font class=item> White&nbsp;&nbsp;<input type="radio" name="ez_double_white" value="maple">
+  </font><font class=item> Maple</font></td>
+ <td height="7" class=dropdown>
+    <select name="autopoles9" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select></td>
+  <td height="7" colspan=2 class=item>Additional 5' Auto Pole Cross Bar -  $89.25 / $110.85 post deadline</td>
+  <td height="7" style="border-right:1.0pt solid black"></td>
+  </tr>
+ <tr height=15>
+  <td height=15 ></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td>&nbsp;</td>
+  <td><span class="item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$238.50 / $310.15 post deadline</span></td>
+  <td></td>
+      <td height="7" class=dropdown>
+    <select name="autopoles10" size="1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4 </option>
+      <option value="5">5 </option>
+      <option value="6">6 </option>
+      <option value="7">7 </option>
+      <option value="8">8 </option>
+    </select>
+  </td>
+  <td height="7" colspan=2 class=item>Additional 10' Auto Pole Cross Bar -    $89.25 / $110.85 post deadline</td>
+  <td height="7" style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=14>
+  <td height="26" class=item></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td></td>
+  
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=7>
+  <td height=7></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&emsp;GES Graphics</td>
+ </tr>
+ <tr height=14>
+  <td height="14"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+ <td class=itemhead colspan=2><a href="pdfs/GES_Graphics_Form.pdf" title="Graphics Form" target="_blank">GES EXHIBITOR GRAPHICS REQUEST</a></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=7>
+  <td height=7></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&emsp;GES Supervised Labor</td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+ <td class=itemhead colspan=2><a href="pdfs/GES_Labor_Form.pdf" title="Graphics Form" target="_blank">GES SUPERVISED LABOR REQUEST</a></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ 
+ <tr height=14>
+  <td height="14"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=7>
+  <td height=7></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&emsp;Exhibitor Appointed Contractor</td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+ <td class=itemhead colspan=2><a href="pdfs/EAC_Form.pdf" title="Graphics Form" target="_blank">EXHIBITOR APPOINTED CONTRACTOR FORM</a></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ 
+ <tr height=14>
+  <td height="14"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr>
+  <td></td>
+  <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&emsp;GES Carpeting</td>
+ </tr>
+ <tr height=7>
+  <td height=7></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr>
+  <td height="40">&nbsp;</td>
+  <td style='border-left: 1.0pt solid black'>&nbsp;</td>
+  <td colspan=6 class=item align="justify">Each booth in Children's Club has gray carpet included as part of the booth package. However, you may choose to order different color carpet, different quality carpet, add padding under your carpet or even have the gray carpet removed, leaving bare concrete floors. Use this section to order carpet other than the gray that's included.</td>
+  <td style='border-right:1.0pt solid black'></td>
+ </tr>
+ <tr height=14>
+  <td height="14"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td colspan=3 class=dropdown>
+    <input type="checkbox" name="remover" value="remove carpet">
+    <font class=item> Remove existing carpet - $2.20 per square foot </font></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+<tr height=14>
+  <td height=14 class=item></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+<td colspan=2 class=item>
+    <input type="checkbox" name="adder_padding" value="add padding">
+    <font class=font10> Add padding - $2.00 per square foot</font></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=44>
+  <td height=44>&nbsp;</td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td colspan=6 class=itemred>PLEASE NOTE: Ordered carpet will be laid on top of existing carpet unless you have checked the "Remove Existing Carpet" box above.</td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+<tr height=4>
+  <td height=4>&nbsp;</td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+   <td colspan=3 class=itemhead ><a href="images/Carpet_Colors.jpg" target="_blank">Standard  Carpeting</a> replace ENK gray carpet (10x10, 10x20, or 10x30 ONLY)</td>
+      <td colspan=3 class=itemhead><a href="images/Carpet_Colors.jpg" target="_blank">Custom Carpeting</a> replace ENK gray carpet - price per square foot</td>
+    <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td colspan=2><span class="item">10'x10' 13 oz. Standard Carpet - $216.70 / $281.90 post deadline</span></td>  
+  <td></td>
+  <td colspan=2 class=itemcarp>13 oz. Standard Carpet - $4.80 psf / $6.30 psf post deadline</td>
+  <td colspan=2 class=item style="border-right:1.0pt solid black">Indicate color:<span style="font-size:7.0pt;font-family:Arial">
+    <select name="cc_color" size="1">
+       <option value="-">-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+      <option value="black">black</option>
+      <option value="blue">blue</option>
+      <option value="blue jay">blue jay</option>
+      <option value="burgundy">burgundy</option>
+      <option value="emerald green">emerald green</option>
+      <option value="gray">gray </option>
+      <option value="pepper">pepper </option>
+      <option value="Red">red </option>
+    </select>
+  </span></td>
+   </tr>
+  <tr height=14>
+  <td height="26"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+
+  <td colspan=2 class=item>10'x20' 13 oz Standard Carpet - $435.05 / $565.60 post deadline</td>
+  <td></td>
+  <td colspan=2 class=item>26 oz. Plush Carpet - $7.00 psf / $9.10 psf post deadline</td>
+  <td colspan=2 class=item style="border-right:1.0pt solid black">Indicate color:<span style="font-size:7.0pt;font-family:Arial">
+    <select name="plush_color" size="1">
+      <option value="-">-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+      <option value="cement">cement </option>
+      <option value="charcaol">charcoal</option>
+      <option value="cobalt blue">cobalt blue</option>
+      <option value="dove">dove</option>
+      <option value="lava rock">lava rock </option>
+      <option value="navy">navy </option>
+      <option value="onyx">onyx</option>
+      <option value="red">red</option>
+      <option value="royal blue">royal blue </option>
+      <option value="silky beige  ">silky biege </option>
+      <option value="silver">silver </option>
+      <option value="snow">snow </option>  
+    </select>
+  </span></td>
+ </tr>
+ <tr height=15>
+  <td  height="15"></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2 class=item>10'x30' 13 oz Standard Carpet - $653.75 / $849.85 post deadline</td>
+  <td></td>
+  <td colspan=2 class=item>50 oz. Ultra Plush  - $8.00 psf / $10.40 psf post deadline</td>
+  <td colspan=2 class=item style="border-right:1.0pt solid black">Indicate color:
+    <select name="ultra_color" size="1">
+      <option value="-">-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+      <option value="bisque">bisque </option>
+      <option value="black">black </option>
+      <option value="cabernet">cabernet </option>
+      <option value="graphite">graphite</option>
+      <option value="iceberg">icerberg </option>
+      <option value="midnight">midnight </option>
+      <option value="seascape">seascape </option>
+      <option value="sterling">sterling </option>
+      <option value="teal">teal</option>      
+    </select>
+   </td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td colspan=2 class=item>Indicate color:<span style="font-size:7.0pt;font-family:Arial">
+    <select name="carpet_color" size="1">
+      <option value="-">-</option>
+      <option value="black">black</option>
+      <option value="blue">blue</option>
+      <option value="blue jay">blue jay</option>
+      <option value="burgundy">burgundy</option>
+      <option value="emerald green">emerald green </option>
+      <option value="pepper">pepper </option>
+      <option value="Red">red </option>
+  </select>
+  </span></td>
+   <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr><td height=8></td>
+   <td style="border-left:1.0pt solid black">&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="border-right:1.0pt solid black">&nbsp;</td>
+ </tr>
+ <tr height=5>
+  <td height=5></td>
+  <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+ </tr>
+  <tr height=7>
+  <td  height=7>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr> 
+ <tr height=24>
+        <td></td>
+        <td colspan=8 class=title_reverse style='border-bottom:1.0pt solid black'>&nbsp;Mannequins, Hangers and Steamers&nbsp;&nbsp;-&nbsp;For more information call 239-263-7167 or visit <a href="http://www.dbrentaldisplays.com" target="_blank">www.dbrentaldisplays.com</a></td>
+      </tr>
+      <tr height=14>
+        <td></td>
+        <td style="border-left:1.0pt solid black" colspan=4 class=itemhead>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td colspan=3 class=itemhead>Female Mannequins</td>
+        <td colspan=3 class=itemhead>Male Mannequins</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_1" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 4/6,  Black Dress Form, Wood Base - $90.00 each</td>
+        <td class=dropdown><select name="m_mann_1" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 40,  Black Dress Form, Wood Base - $90.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_2" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 4/6,  Beige Dress Form, Wood Base - $90.00 each</td>
+        <td class=dropdown><select name="m_mann_2" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 40,  Beige Dress Form, Wood Base - $90.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_3" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 6/8,  Black Dress Form, Wood Base - $90.00 each</td>
+        <td class=dropdown><select name="m_mann_3" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 40, Black Dress Form, Round Metal Base - $90.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_4" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 6/8,  Beige Dress Form, Wood Base - $90.00 each</td>
+        <td class=dropdown><select name="m_mann_4" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 40, Beige Dress Form, Round Metal Base - $90.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_5" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 4/6,  Black Dress Form, Round Metal Base - $90.00 each</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_6" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 4/6,  Beige Dress Form, Round Metal Base - $90.00 each</td>
+        <td colspan=3 class=itemhead>Kids Mannequins</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_7" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 6/8,  Black Dress Form, Round Metal Base - $90.00 each</td>
+        <td class=dropdown><select name="k_mann_1" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 6 mo, Beige w/Shoulder, Wood Base - $55.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="f_mann_8" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 6/8,  Beige Dress Form, Round Metal Base - $90.00 each</td>
+        <td class=dropdown><select name="k_mann_2" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 1-2 yr, Beige w/Shoulder, Wood Base - $55.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class=dropdown><select name="k_mann_3" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 3-4 yr, Beige w/Shoulder, Wood Base - $55.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class=dropdown><select name="k_mann_4" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 6-8 yr, Beige w/Shoulder, Wood Base - $55.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class=dropdown><select name="k_mann_5" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Size: 10-12 yr, Beige w/Shoulder, Wood Base - $55.00 each</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=16>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td colspan=3 class=itemhead>Adult Hangers</td>
+        <td colspan=3 class=itemhead>Kids Hangers</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="a_hang" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Natural Wood/Chrome without clips - $20.00 per pack of 10</td>
+        <td class=dropdown><select name="k_hang" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Natural Wood/Chrome without clips - $20.00 per pack of 10</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=15>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td class=dropdown><select name="a_hang_clip" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Natural Wood/Chrome with clips - $20.00 per pack of 10</td>
+        <td class=dropdown><select name="k_hang_clip" size="1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select></td>
+        <td class=item colspan=2>Natural Wood/Chrome with clips - $20.00 per pack of 10</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=16>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=16>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td colspan=3 class=itemhead>Steamers</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=40>
+        <td height="40">&nbsp;</td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td colspan=6>Available at show site ONLY, on a first-come, first-served basis. $30 per hour, one hour minimum. afterwards $7.50 for every 15 minutes.<br />Electrical outlet is not provided, and should be ordered from electrical contractor.</td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=5>
+        <td></td>
+        <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+      </tr>
+ <tr height=7>
+  <td  height=7>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr> 
+ <tr height=24>
+  <td height=24></td>
+  <td colspan=8 class=title_reverse style="border-right:1.0pt solid black">CALCULATE TOTAL - Click TOTAL button</td>
+ </tr>
+<tr>
+  <td></td>
+  <td style="border-left:1.0pt solid black" colspan=2>&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr>
+ <td></td>
+  <td style="border-left:1.0pt solid black">&nbsp;</td>
+  <td colspan=2 class=item>
+    <input type="button" onclick='calculateTotal()' Value="TOTAL">
+  </td>
+  <td></td>
+  <td colspan=2 class=itemhead>GES PRODUCTS / SERVICES</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=18>
+  <td height=18></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2 class=item>&nbsp;
+    
+  </td>
+  <td>&nbsp;</td>
+  <td class=money style="text-align:right"><div id="gsubtotal"></div></td>
+  <td class=item> &nbsp;&nbsp;Item Subtotal</td>
+  <td class=money></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td class=item><div id="Boothdims"></div></td>
+  <td></td>
+  <td class=money style="text-align:right"><div id="gpst"></div></td>
+  <td class=item>&nbsp;&nbsp;Petroleum Surcharge - 3%<br></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td class=money><div id="Boothdims"></div></td>
+  <td></td>
+  <td class=money style="text-align:right"><div id="gpstsubtotal"></div></td>
+  <td class=item>&nbsp;&nbsp;Subtotal</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td class=money><div id="Boothdims"></div></td>
+  <td class=money></td>
+  <td class=money style="text-align:right"><div id="gtax"></div></td>
+  <td class=item>&nbsp;&nbsp;8.875% NY Sales Tax</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=18>
+  <td height=22></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2></td>
+  <td ></td>
+  <td class=money style="text-align:right"><div id="gTotal"></div></td>
+  <td class=item>&nbsp;&nbsp;Total</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height="14"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td colspan=2 class=itemhead>ALL TOTALS ARE ESTIMATES ONLY.</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height="14"></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td colspan=2 class=itemhead>JAVITS ELECTRICAL SERVICES</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=18>
+  <td height=18></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=3 class=itemhead>CHARGES WILL BE VERIFIED ON ORDER CONFIRMATION.</td>
+  <td class=money><div id="esubtotal"></div></td>
+  <td class=item> &nbsp;&nbsp;Subtotal</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td class=money><div id="etax"></div></td>
+  <td class=item>&nbsp;&nbsp;8.875% NY Sales Tax</td>
+  <td class=money></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=18>
+  <td height=22></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2></td>
+  <td></td>
+  <td class=money><div id="eTotal"></div></td>
+  <td class=item>&nbsp;&nbsp;Total</td>
+  <td class=money></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td colspan=2 class=itemhead>BOOTHSEAL</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=18>
+  <td height=18></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2></td>
+  <td>&nbsp;</td>
+  <td class=money><div id="BSsubtotal"></div></td>
+  <td class=item> &nbsp;&nbsp;Subtotal</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td class=money><div id="BStax"></div></td>
+  <td class=item>&nbsp;&nbsp;8.875% NY Sales Tax</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+ <tr height=18>
+  <td height=22></td>
+  <td style="border-left:1.0pt solid black"></td>
+  <td colspan=2></td>
+  <td class=money></td>
+  <td class=money><div id="BSTotal"></div></td>
+  <td class=item>&nbsp;&nbsp;Total</td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+  <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td ></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+      <tr height=14>
+        <td height="14"></td>
+        <td style="border-left:1.0pt solid black" >&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td class=itemhead colspan=2>D&B RENTAL DISPLAYS</td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=18>
+        <td height=18></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td colspan=3 class=item>&nbsp;</td>
+        <td class=money><div id="msubtotal"></div></td>
+        <td class=item>&nbsp;&nbsp;Subtotal</td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=14>
+        <td></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class=money><div id="mtax"></div></td>
+        <td class=item>&nbsp;&nbsp;8.875% NY Sales Tax</td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+      <tr height=18>
+        <td height=22></td>
+        <td style="border-left:1.0pt solid black"></td>
+        <td colspan=2></td>
+        <td></td>
+        <td class=money><div id="mTotal"></div></td>
+        <td class=item>&nbsp;&nbsp;Total</td>
+        <td></td>
+        <td style="border-right:1.0pt solid black"></td>
+      </tr>
+   <tr height=14>
+  <td height=14></td>
+  <td style="border-left:1.0pt solid black" >&nbsp;</td>
+  <td class=item>&nbsp;</td>
+  <td ></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td style="border-right:1.0pt solid black"></td>
+ </tr>
+
+ <tr height=18>
+   <td height=18></td>
+   <td colspan=8 style="border-left:1.0pt solid black; border-right:1.0pt solid black; font-family:Arial, Helvetica, sans-serif; font-color:red; font-size:9pt; text-align:center;">
+   <div id="Error"></div></td>
+ </tr>
+ <tr height=8>
+  <td height=21></td>
+   <td style="border-left:1.0pt solid black">&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td style="border-right:1.0pt solid black">&nbsp;</td>
+ </tr>
+ <tr height=5>
+  <td height=5></td>
+  <td colspan=8 style="border-right: 1.0pt solid black;  border-bottom: 1.0pt solid black; border-left: 1.0pt solid black">&nbsp;</td>
+ </tr>
+ <tr height=4>
+  <td height=4>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=14>
+  <td height=14>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=4>
+  <td height=4>&nbsp;</td>
+  <td ></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=16>
+  <td height=16>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=16>
+  <td height=16></td>
+  <td class=itemhead colspan=4>Contact  Information</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=23>
+  <td height=23></td>
+  <td class=address colspan=5>Exhibiting Collection Name:
+    <input type="text" name="company" size="35" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+  </td>
+  <td class=address colspan="3">Email: 
+    <input type="text" name="email" size="30" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+  </td>
+ </tr>
+ <tr height=23>
+  <td height=23></td>
+  <td class=address colspan=5>Booth Number: 
+     <input type="text" name="booth" size="45" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+    (not required to place order)</td>
+  <td colspan=2></td>
+  <td></td>
+ </tr>
+ <tr height=23>
+  <td height=23></td>
+  <td class=address colspan=4>Contact:
+    <input type="text" name="contact" size="50" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+  </td>
+  <td></td>
+  <td class=address colspan=3>Contact Cell:
+    <input type="text" name="contact_cell" size="30" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+  </td>
+ </tr>
+ <tr height=23>
+  <td height=23></td>
+  <td class=address colspan=8>Street Address: 
+    <input type="text" name="street" size="75" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+   </td>
+ </tr>
+ <tr height=15>
+   <td height=22></td>
+   <td class=address colspan=8>City, State, Zip, Country:
+     <input type="text" name="city-st-zip" size="120" class="BodyCopy"  style=" border:none; border-bottom:solid windowtext .75pt">
+   </td> 
+  </tr>
+ <tr height=15>
+  <td height=15></td>
+   <td colspan=8></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+   <td colspan=8 class=font0></td>
+ </tr>
+ <tr height=25>
+  <td height=25></td>
+   <td colspan=8 class=fontred>Vendors will NOT provide products or services without payment in full.</td>
+ </tr>
+ <tr height=15>
+  <td height=15>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=24>
+  <td height=24></td>
+  <td colspan=4 class=address>
+    <input type="radio" name="paytype" id="cc" value="cc" onClick="paymentinfo()">I will pay my charges by credit card</td>
+  <td></td>
+  <td colspan=3></td>
+ </tr>
+ <tr height=24>
+  <td height=24></td>
+  <td colspan=5 class=address>
+    <input type="radio" name="paytype" id="check" value="check" onClick="paymentinfo()">I will pay my charges with a check. </td>
+    <td colspan=3></td>
+ </tr>
+ <tr height=24>
+  <td height=24></td>
+  <td colspan=5 class=address>
+    <input type="radio" name="paytype" id="wire" value="wire" onClick="paymentinfo()">I will pay my charges with a wire transfer. </td>
+    <td colspan=3></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ </table>
+ <table align="center" border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>
+ <col width=1153>
+ <tr>
+    <td class="tarea">
+    &emsp;&emsp; &emsp;<textarea name="SpecialReq"  cols="140" rows="5" wrap="hard">Enter any special requests or other comments here</textarea>
+    </td>
+ </tr>
+ <tr>
+    <td>
+    <div id=Payment></div>
+    </td>
+ </tr>
+ </table>
+ <table align="center" border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>
+  <col width=5>
+  <col width=10>
+  <col width=50>
+  <col width=350>
+  <col width=130>
+  <col width=50>
+  <col width=300>
+  <col width=210>
+  <col width=30>
+
+ <tr height=15>
+  <td height=15></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+<tr height=15>
+  <td height=15></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td style="font-size:14.0pt"><input type="checkbox" name="agree" value="I have accepted GES Terms and Conditions"  onclick="calculateTotal()" align="top"></td>
+  <td colspan=7><span style="font-size: 10pt; color: #F00;">I agree in placing this order that I have
+  accepted the Payment Policy and Contract Terms and Conditions of <a href="pdfs/GES_TandC.pdf" target="_blank">GES</a>, <a href="pdfs/Javits_TandC.pdf" title="Javits Electrical Terms and Conditions" target="_blank">Javits</a>, <a href="pdfs/BoothSeal_TandC.pdf" target="_blank">BoothSeal</a> and <a href="pdfs/DB_Rental_Agreement.pdf">D&amp;B Rental Displays</a> as appropriate.</span></td>
+ </tr>
+ <tr height=15>
+ <td height=15>&nbsp;</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=22>
+  <td height=22></td>
+  <td></td>
+  <td colspan=6><span style="font-size:14.0pt;font-family:&quot;Arial Black&quot;;
+  color:red">
+    <input type="submit" onMouseOver="calculateTotal()" name="checkbox2" value="Submit Form">
+  </span></td>
+  <td></td>
+ </tr>
+ <tr height=15>
+  <td height=15></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+</table> 
+
+</form>
+<script language="JavaScript" type="text/javascript">
+
+ 
+ //You should create the validator only after the definition of the HTML form
+  var frmvalidator  = new Validator("myform");
+ 
+
+frmvalidator.addValidation("company","req","Please enter your company name");
+frmvalidator.addValidation("contact","req","Please enter your contact Name");
+frmvalidator.addValidation("contact_cell","req","Please enter your contact Cell");
+frmvalidator.addValidation("street","req","Please enter your billing address");
+frmvalidator.addValidation("agree","shouldselchk","Please agree to the GES terms and conditions");
+frmvalidator.addValidation("payauth","req","Please check box for payment authorization");
+
+</script>
+</body>
+
+</html>

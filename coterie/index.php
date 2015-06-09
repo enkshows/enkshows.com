@@ -3,7 +3,7 @@
   $content  = "An International fashion exhibition in the U.S. featuring contemporary to traditional women’s ready-to-wear. Twice a year in NYC, concurrent with Sole Commerce and TMRW";
   $keyword  = "Fashion Coterie, Coterie, womens trade show, womans trade show, international fashion trade show, sole commerce, tmrw, javits fashion, javits";
   include('../includes/variables.php'); 
-
+  require('../bin/ClassMathGuard.php');
   include('../includes/fc/2015/fc-feb2015-vars.php');
   include('../includes/show-header.php');
 ?> 

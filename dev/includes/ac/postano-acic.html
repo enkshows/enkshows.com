@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,maximum-scale=1.0,intial-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Children's Club Social Hub</title>
+</head>
+<body>
+    <script class="postano-controls-feed-selector-v2" type="application/json"></script>
+        <div class="postanowrapper"
+        data-postano-account-id="2371"
+        data-postano-project-id="22268"
+        data-postano-product-id="3017"
+        data-postano-posts-data-source="v2"
+        data-postano-width="100%"
+        data-postano-height="100%"
+        data-postano-items-first-page="10"
+        data-postano-items-per-page="10"
+        data-postano-enable-instascroll="true"
+        data-postano-autoload-new-posts="true"
+        data-sort="moderated_time"
+        data-postano-skip-jquery="false">
+        </div>
+
+<script>
+  var server = "//postano-embed.s3.amazonaws.com/prod";
+
+  (function(id) {
+    if (document.getElementById(id)) return;
+    var js = document.createElement('script'); js.id = id; js.src = server + '/scripts/embed.js';
+    document.body.appendChild(js);
+  }('postano-embed'));
+
+  document.querySelectorAll('.postano-userIcon').style.display = "none";
+
+</script>
+
+    <!-- editorial stylekit -->
+
+     <style>
+    body {margin: 0;}
+    .postanowrapper {
+        padding: 0;
+    }
+    .postano-posts.postano-show {
+    background:#EDEDED;
+    font-family:proximathin!important;
+    }
+
+    /* adjust margins with padding, odd I know. */
+
+    .postanowrapper .postano-post {
+    padding: 0;
+    }
+
+    .postano-post .postano-postNest {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background: #000;
+    }
+
+    .postano-post .postano-userContainer {
+    position:static;
+    padding:0;
+    }
+
+    .postano-post .postano-meta {
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    pointer-events:none;
+    }
+
+    .postano-post .postano-userContainer > img,
+    .postano-post .postano-userWrap,
+    .postano-post .postano-postFooter,
+    .postano-post .postano-textArea,
+    .postano-post .postano-date,
+    .postano-post .postano-actualtitle {
+    display:none;
+    }
+
+    .postano-post .postano-postService {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    z-index: 100;
+    }
+
+    .postano-post .postano-meta .postano-postService::after {
+    position: absolute;
+    bottom: 15px;
+    font-size:18pxpx;
+    color:#fff!important;
+    }
+
+    .postano-cardNest {
+        width:50%;
+    }
+
+    .postanocardImage-vertical .postano-cardImage {
+    width: auto;
+    height: auto;
+    max-width: 380px;
+    }
+
+    .postanocardImage-horizontal .postano-cardImage {
+    max-width: 430px;
+    height: auto;
+    }
+
+    /* make videos larger */
+    /* repsonsive: 7 cols */
+    .postano-posts.postano-col7 .postano-post.postano-video-true {
+    width: 28.56%
+    }
+
+    .postano-posts.postano-col7 .postano-post.postano-video-true + .postano-post.postano-video-true  {
+    width: 14.28%;
+    }
+
+    /* repsonsive: 6 cols */
+    .postano-posts.postano-col6 .postano-post.postano-video-true {
+    width: 32.33%;
+    }
+
+    .postano-posts.postano-col6 .postano-post.postano-video-true + .postano-post.postano-video-true  {
+    width: 16.66%;
+    }
+
+    /* repsonsive: 5 cols */
+    .postano-posts.postano-col5 .postano-post.postano-video-true {
+    width: 40%;
+    }
+
+    .postano-posts.postano-col5 .postano-post.postano-video-true + .postano-post.postano-video-true  {
+    width: 20%;
+    }
+
+    /* repsonsive: 4 cols */
+    .postano-posts.postano-col4 .postano-post.postano-video-true {
+    width: 50%;
+    }
+
+    .postano-posts.postano-col4 .postano-post.postano-video-true + .postano-post.postano-video-true  {
+    width: 25%;
+    }
+
+    /* repsonsive: 3 cols */
+    .postano-posts.postano-col3 .postano-post.postano-video-true {
+    width: 66.66%;
+    }
+
+    .postano-posts.postano-col3 .postano-post.postano-video-true + .postano-post.postano-video-true  {
+    width: 25.11111%;
+    }
+
+    /* repsonsive: 2 cols */
+    .postano-posts.postano-col2 .postano-post.postano-video-true {
+    width: 100%;
+    }
+
+    .postano-posts.postano-col2 .postano-post.postano-video-true + .postano-post.postano-video-true  {
+    width: 50%;
+    }
+
+    /* repsonsive: 1 cols */
+    .postano-posts.postano-col1 .postano-post.postano-video-true {
+    width: 100%;
+    }
+
+    /* custom attribution image */
+    a.postano-attributionLinkWithImage {
+    width:100%;
+    border:0 none;
+    }
+
+    a.postano-attributionLinkWithImage .postano-atrributionTitle {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #fff;
+    }
+
+
+    a.postano-attributionLinkWithImage .postano-atrributionThumb {
+    width: 93%;
+    max-width: 93%;
+    height: 68px;
+    }
+
+    /* custom attribution link */
+    a.postano-attributionLink {
+    color: #fff;
+    border: 0 none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    background: #f2822b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2822b 0%, #ec492c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2822b), color-stop(100%,#ec492c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f2822b 0%,#ec492c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f2822b 0%,#ec492c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f2822b 0%,#ec492c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f2822b 0%,#ec492c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2822b', endColorstr='#ec492c',GradientType=0 ); /* IE6-9 */
+    }
+
+    /* text only posts */
+
+    @font-face {
+        font-family: proximabold;
+        src: url("fonts/proximabold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: proximathin;
+        src: url("fonts/proximathin.ttf") format("truetype");
+        font-weight:bold;
+    }
+
+    .postano-post.postano-text-only .postano-meta {
+    position:static;
+    pointer-events:none;
+    height:0;
+    }
+
+    .postano-post.postano-text-only .postano-userContainer {
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 0 15px 15px;
+    }
+
+    .postano-post.postano-text-only .postano-userContainer > img,
+    .postano-post.postano-text-only .postano-userWrap,
+    .postano-post.postano-text-only .postano-textArea,
+    .postano-post.postano-text-only .postano-date,
+    .postano-post.postano-text-only .postano-actualtitle {
+    display:block;
+    }
+
+
+    html body .postano-posts.postano-col7 .postano-post.postano-text-only {
+    width: 28.56%
+    }
+
+    html body .postano-posts.postano-col7 .postano-post.postano-text-only + .postano-post.postano-text-only  {
+    width: 14.28%;
+    }
+
+    /* repsonsive: 6 cols */
+    html body .postano-posts.postano-col6 .postano-post.postano-text-only  {
+    width: 32.33%;
+    }
+
+    html body .postano-posts.postano-col6 .postano-post.postano-text-only  + .postano-post.postano-text-only   {
+    width: 16.66%;
+    }
+
+    /* repsonsive: 5 cols */
+    html body .postano-posts.postano-col5 .postano-post.postano-text-only  {
+    width: 40%;
+    }
+
+    .postano-posts.postano-col5 .postano-post.postano-text-only  + .postano-post.postano-text-only   {
+    width: 20%;
+    }
+
+    /* repsonsive: 4 cols */
+    html body .postano-posts.postano-col4 .postano-post.postano-text-only  {
+    width: 50%;
+    }
+
+    html body .postano-posts.postano-col4 .postano-post.postano-text-only  + .postano-post.postano-text-only   {
+    width: 25%;
+    }
+
+    /* repsonsive: 3 cols */
+    html body .postano-posts.postano-col3 .postano-post.postano-text-only  {
+    width: 66.66%;
+    }
+
+    html body .postano-posts.postano-col3 .postano-post.postano-text-only  + .postano-post.postano-text-only   {
+    width: 25.11111%;
+    }
+
+    html body .postano-posts.postano-col1 .postano-post.postano-text-only {
+    width: 100%;
+    }
+
+    .postano-posts .postano-post.postano-text-only .postano-postNest {
+    /*background:rgb(45%, 29%, 53%);*/
+    /*background: #EDEDED;*/
+    /*background: rgb(225,174,170);*/
+    background: rgb(91,94,94);
+    font-family:"proximabold";
+    text-transform:uppercase;
+    }
+
+    .postano-posts .postano-post.postano-text-only  .postano-textArea {
+    display:block;
+    padding: 35px 35px 90px;
+    }
+
+    .postano-posts .postano-post.postano-text-only .postano-title {
+    display:block;
+    color:#fff;
+    font-size:24px;
+    line-height:1;
+    font-weight:bold;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    /* Postano text only color*/
+    .postano-posts .postano-post.postano-text-only .postano-title {
+     color: #fff;
+    }
+    
+    /* Coterie text only link color*/
+    .postano-posts .postano-post.postano-text-only .postano-textArea a {
+    color: #fff;
+    text-decoration: underline;
+    }
+
+    .postano-posts .postano-post.postano-text-only .postano-userName {
+    font-family: proximathin;
+    font-weight: normal;
+    font-size: 22px;
+    color: #fff;
+    }
+
+    .postano-posts .postano-post.postano-text-only .postano-screenName {
+    display: block;
+    font-size: 12px;
+    font-family: proximathin;
+    color: #fff;
+    }
+
+    .postano-posts .postano-post.postano-text-only .postano-userIcon {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 5px;
+    float: left;
+    border-radius: 100%;
+    }
+
+    .postano-cardContainer
+    .postano-cardText  {
+        font-size: 16px;
+    }
+
+    .postano-cardNest {
+        min-width: 600px;
+    }
+
+    .postano-cardContainer
+    .postano-cardNavigation 
+    .postano-nextCardButton {
+        /*left: -33px;*/
+    }
+
+    .postano-cardContainer 
+    .postano-userName {
+        font-size: 18px;
+    }
+
+    .postanowrapper {
+        padding-top: 0 !important;
+    }
+    .postano-userIconLink {
+        display: none !important;
+    }
+    /*img.postano-userIcon {
+        display: none !important;
+    }
+    .postano-userIconLink {
+        display: none !important;
+    }*/
+    a.postano-userIconLink {
+        display: none !important;
+    }
+    div.postano-userContainer > a.postano-userIconLink {
+        display: none !important;
+    }
+
+    .postanowrapper .postano-postNest {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: 3px solid #EDEDED;
+    }
+
+    .postanocardImage-vertical .postano-cardContainer .postano-cardImage {
+        height: auto;
+    }
+
+    .postano-feed-selector {
+        display: none !important;
+    }
+    </style>
+</body>
+</html>

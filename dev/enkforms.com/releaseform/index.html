@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/> 
+	<title>ENK Upload form </title>
+		<link href='css/documentation.css' type="text/css" rel="stylesheet"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<link href="css/scrollbar.css" type="text/css" rel="stylesheet" />
+		<link href="css/jquery.fileupload-ui.css" type="text/css" rel="stylesheet" />
+        <style type="text/css">
+        }
+		</style>		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-21042607-13']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();	
+		  
+		  
+	/*jQuery(document).ready(function($) {
+        var originalValue;
+        if($.browser.msie){
+                originalValue = $('#searchKey').attr('value');
+        }else{
+                originalValue = $('#searchKey').attr('placeholder');
+        }
+        var placeAttr = $('#searchKey').attr('placeholder');
+
+        $('#searchKey').focus(function() {
+                        $('#searchKey').attr('placeholder', '');
+                        if($.browser.msie && $('#searchKey').attr('value') == originalValue){
+                                $('#searchKey').attr('value', ''); 
+                        }
+                });
+        $('#searchKey').blur(function(){
+                $('#searchKey').attr('placeholder', placeAttr);
+                if($.browser.msie && ($('#searchKey').attr('value') == "" || $('#searchKey').attr('value') == originalValue)){
+                        $('#searchKey').attr('value', originalValue);
+                }
+        });
+   }); 
+		  */
+		
+		</script> 	
+		
+		
+	</head>
+	<body>
+		<div>
+		<div class="logo">
+			<img src="images/enk_logo.png" alt="logo" ></img>
+		</div>
+		<div class="main-content">
+			<h1>PHOTOGRAPHY RELEASE AND UPLOAD</h1>
+			<p class="content"> To be included in our advertising opportunities, it is required that you agree and sign the Photo Release Agreement prior to ENK using your photo. In addition, please use the image uploader to submit hi-resolution photos as well as a brief bio of your latest collection and company logo. Photo selection and Bio/Collection Description is sole discretion of ENK.<br>
+			  <br>
+	      <span class="bold">For files over 5MB, please send via yousendit.com to:<br>
+			</p>
+			<p class="content"><span class="bold">Circuit.Intermezzo<br>
+		    photo_acic@enkshows.com<br>
+		    </span></p>	
+		    
+		    <p class="content"><span class="bold">Children's Club<br>
+		    photo_cc@enkshows.com<br>
+		    </span></p>	
+		    
+		    <p class="content"><span class="bold">ENKVEGAS<br>
+		    photo_vegas@enkshows.com<br>
+		    </span></p>	
+		    
+		    <p class="content"><span class="bold">Fraiche<br>
+		    photo_acic@enkshows.com<br>
+		    </span></p>	
+		    
+		    <p class="content"><span class="bold">Gallery @ Coterie<br>
+		    photo_coterie@enkshows.com<br>
+		    </span></p>	
+		    
+		    <p class="content"><span class="bold">Sole Commerce<br>
+		    photo_sc@enkshows.comm<br>
+		    </span></p>	
+         
+			<form  id="fileupload" action="upload.php" method="POST" class="P10" enctype="multipart/form-data">
+			  		   
+		    <label> Applicable Shows (Only select shows you plan to exhibit for) <em>*</em> </label>
+				<br />
+			    <div class="cbgroup" style="float:left"> 
+				<input type="checkbox" name="one[]" id="one" value="FashionCoterie" validate="required:true, minlength:1">  Fashion Coterie</input> <br/>
+				<input type="checkbox"  name="one[]" id="two" value="TMRW"> TMRW </input> <br/>
+				<input type="checkbox"  name="one[]" id="three" value="IntermezzoCollections" >  Intermezzo Collections</input> <br/>
+				<input type="checkbox"  name="one[]" id="four" value="ChildrensClub" > Children's Club</input> <br/>
+				<!--<input type="checkbox"  name="one[]" id="five" value="ENKWSA"> ENKWSA </input> <br/></br/>-->
+				<input type="checkbox"  name="one[]" id="five" value="Fraiche"> fraîche </input> <br/></br/>
+				</div>
+				<div class="cbgroup" style="float:left; margin-left:130px">
+				<input type="checkbox" name="one[]" id="seven" value="SoleCommerce" >  Sole Commerce</input> <br/>
+				<input type="checkbox" name="one[]" id="eight" value="AccessorieCircuit" > Accessorie Circuit </input> <br/>
+				<!--<input type="checkbox" name="one[]" id="nine" value="ENKNYC" >  ENKNYC</input> <br/></br/>-->
+				<input type="checkbox" name="one[]" id="nine" value="ENKVEGAS"  > ENKVEGAS</input> <br/>
+				<input type="checkbox" name="one[]" id="ten" value="ENKCHINA"  >  ENKCHINA </input> <br/>
+				<input type="checkbox" name="one[]" id="eleven" value="Gallery"  > Gallery @ Coterie </input> <br/></br/>
+				</div>	
+				
+				<div style="clear:both" />
+				<label for="one[]" class="error">Please select at least one show.</label>
+				
+							
+				<label class="thirtymargin" > Bio / Collection Description<em>*</em> </label>
+				<br />
+				<input type="text" name="showroom" id="showroom" placeholder="Showroom Name" class=" firstcolumn" size="40" />
+				<span class="second" >
+				
+				<input type="text" class="required" name="collection" id="collection" placeholder="Collection Name" /></span>
+				
+				<textarea placeholder="Bio/Collection Description. 300 characters maximum." id="description" name="description" ></textarea>
+				
+				
+				<label class="thirtymargin"> Logo Upload </label>
+				<p style="font-size:11px">Recommended file type:EPS or Ai</p>
+				  <div class="imagewrapper" id="MultiFile1_wrap_list"> </div> 
+				   <div id="logohelper"> 
+				   <span id="logoupload" class="fileinput-button ">
+				   <span class="btn" >+ Add File</span>
+				  <input type="file"  class="multi" name="files1" maxlength="1"></input>
+				  </span>
+				 </div>
+				
+				<!--<br/><br/>
+				<label> Image Upload<em>*</em> </label>
+				<br/><br/>
+				<div id="dragzone"><span class="bold">Drag files into this box to attach </span> <p> Accepted Hi-Resolution file types: jpg,png,pdf. Max file size is 5mb" </p></div> -->
+					
+				   <label class="thirtymargin"> Image Upload</label>
+				   <p> Accepted Hi-Resolution file types: jpg, png, pdf. Max file size is 5MB per image. 10 images maximum.</p>
+				   
+				   <div class="imagewrapper" id="MultiFile2_wrap_list"> </div> 
+				   <span class="fileinput-button">
+				   <span class="btn" >+ Add Image</span>
+					<input type="file" class="multi" name="files[]"></input>
+				   </span>
+				 <label class="thirtymargin"> Photo Release Agreement </label>
+				<div class="agreement-content scrollbar">  
+				<p style="background-color: transparent">For good and valuable consideration, receipt of which is hereby acknowledged, the undersigned hereby grants to ENK International LLC ("ENK") a perpetual, worldwide, non-exclusive, irrevocable license and release to use, reproduce, display, publish, distribute and modify the photographs, video, images, and illustrations (collectively, 'Photographs) which are uploaded or otherwise provided to ENK as part of ENK's website(s) ('the Sites') or in other forms of ENK advertising, marketing and promotional materials, whether in digital form or in any other media, and whether alone or in combination with other materials, including but not limited to text, data, images, photographs, illustrations, animation, graphics, video or audio segments. The undersigned acknowledges that this license and release is freely assignable to ENK's affiliates, successors, assigns, and all third-parties utilized by ENK for its advertising, marketing and promotional activities. ENK may use any and all Photographs provided herewith at its sole discretion. </p>
+
+                <p style="background-color: transparent">The undersigned acknowledges that ENK shall not be obligated to (but is permitted to) identify or attribute any credit to the creators, owners or subjects of the Photographs submitted herewith. </p>
+
+                <p style="background-color: transparent">The undersigned hereby warrants and represents that it owns and/or controls all proprietary rights to the Photographs; that no third party permissions are required, which have not been obtained; that it has the right to convey the rights granted herein; that there has been no prior sale, publication or transfer of the rights to the Photographs that would in any way interfere with ENK's ability to use them; that the Photographs do not now and will not violate any existing intellectual property rights or any contractual rights of others; and that the Photographs are not obscene, libelous, or a violation of any rights of publicity or privacy or any other law or regulation.</p> 
+                <p style="background-color: transparent">The undersigned shall retain all rights to the Photographs which are not expressly granted to ENK. However, at no time will the undersigned acquire or retain any rights to the Sites or other ENK materials which display or make use of the Photographs. </p>
+
+                <p style="background-color: transparent">The undersigned acknowledges that ENK shall not be liable to the undersigned for any direct, indirect, incidental, consequential, special or exemplary damages by virtue of ENK's display, publication, distribution, reproduction, modification or use of the Photographs.</p> 
+
+				</div> 
+				
+				 <label> Accept Agreement <em>*</em></label>
+				 <input type="checkbox" class="required checkbox" name="agree" id="agree"> I Agree to the Photo Release Agreement</input>
+				
+				<label> Digital Signature<em>*</em> </label> <br/>
+				<input type="text" name="fullname" id="fullname" placeholder="Full Name" class="required" size="36"  />
+				
+				<input type="text" name="date" id="date"  placeholder="Date (xx/xx/xxxx)" class="required date secondcolumn" />
+				
+				<br />
+				
+				<input type="text" name="emailaddress" id="emailaddress"  placeholder="Email Address (xx@xx.com)" class="required email" size="36" />
+   
+				<input type="text" name="phone" id="phone"  placeholder="Phone # (numbers only)" maxlength="12" class="required number secondcolumn"/>
+   
+				<br />
+				<div class="errordiv" ><span class="errors" > </span> </div>
+				<input type="submit" value="submit"  ></input>
+				
+			</form>
+			<br />
+			<div id="httpTarget" > </div>	
+				<br />
+				
+			
+		</div>
+	</div>		
+			
+				
+	<script > var full = false;  </script>			
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>	
+
+	<script src='js/jquery.metadata.js' type="text/javascript" language="javascript"></script>
+	<script src='js/jquery.mousewheel.js' type="text/javascript" language="javascript"></script>
+	<script type="text/javascript" src="js/jquery.scroll.min.js"></script>
+	<script src='js/jquery.MultiFile.js' type="text/javascript" language="javascript"></script>	
+	<script src='js/jquery.form.js' type="text/javascript" language="javascript"></script>	
+	<script src='js/jquery.validate.js' type="text/javascript" language="javascript"></script>
+   	<script src='js/jquery.placeholder.js' type="text/javascript" language="javascript"></script>
+    	
+	<script type="text/javascript">	
+			
+			$.metadata.setType("attr", "validate");	
+			  $(function () {
+				
+				$("#logohelper").click(function(event){
+					if(full){
+						alert("You may only upload one logo.");
+						event.preventDefault();
+					}
+				});
+
+			   $('input[placeholder], textarea[placeholder]').placeholder();
+			   $('.scrollbar').scrollbar({ 
+						arrows: false
+					 });
+				$("#fileupload").validate(
+				{
+				invalidHandler: function(form, validator) {
+				
+					// console.log(validator);
+					
+				  var errors = validator.numberOfInvalids();
+				  if (errors) {
+					var message = errors == 1
+					  ? 'You missed 1 field. It has been highlighted'
+					  : 'You missed ' + errors + ' fields. They have been highlighted';
+					$("div.errordiv span").html(message);
+					$("div.errordiv").show();
+				  } else {
+					
+					$("div.errordiv").hide();
+				  }
+				  $(".cbgroup input").click(function(){
+						if(!$('#one').valid()){
+							$(".cbgroup input").addClass('error');				
+							
+						}
+						else {
+							$(".cbgroup input").removeClass('error');				
+						}
+						});						
+						
+					//work around for checkbox group highlight issue	
+					setTimeout(validateErrorBox, 2000);
+				  
+				},
+				 submitHandler: function(form) {
+				 
+				 $("div.errordiv").hide();
+				
+				 $('#httpTarget').html('<span style="color:white;font-weight:bold">Your files are uploading, we appreciate your patience.</span>');
+				// $(form).submit();
+				$(form).ajaxSubmit({ 
+					target: '#httpTarget', 
+					success: function(responseText, statusText, xhr, $form) { 
+					
+						if(responseText.indexOf("One or more of your files have exceeded the 10mb limit per file") != -1){
+							
+							$('#httpTarget').html('<span style="color:red;font-weight:bold">One or more of your files have exceeded the 10mb limit per file. Please reduce file size and resubmit, or send images via yousendit.com to photo_coterie@enkshows.com</span>');
+						}
+					
+					  else if(responseText.indexOf("We have received your files. Thank you for your submission") != -1){
+						$('#httpTarget').html('<span style="color:green;font-weight:bold">We have received your files. Thank you for your submission.</span>');
+					  }		   
+						  
+					  else {
+						$('#httpTarget').html('<span style="color:red;font-weight:bold">There has been an error with your submission. Please refresh the page and resubmit. If error persists please submit photos through yousendit.com to photo_coterie@enkshows.com</span>');
+					  }					  					  
+					  
+					} 
+				}); 
+			   },
+			   ignore:':file'
+			 
+			});	
+					 
+				}); 
+				function validateErrorBox(){
+					if($('#one').hasClass('error')){
+					$(".cbgroup input").addClass('error');			
+					}							
+				}				
+				
+	</script>	  
+  
+	
+</body>
+</html>

@@ -1,5 +1,5 @@
 <?php 
-
+require('../../../bin/ClassMathGuard.php'); 
 include('../../../includes/variables.php'); 
 include('../../../includes/cc/2015/cc-jan2015-vars.php'); 
 ?>

@@ -1,0 +1,46 @@
+.heading{
+	
+}
+
+.label{
+	width: 300px;
+	/*font-size:20px;*/
+	font-weight:bold;
+}
+.labelvalue{
+	/*font-size:18px;*/
+}
+
+.itemhead{ 
+	color:black;
+	font-size:12.0pt;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	
+	}
+	
+.note  {
+	color:black;
+	font-size:10pt;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	font-family:Calibri, sans-serif;
+	}
+	
+.both_size .labelvalue{
+	text-align:left;
+}
+.stores_and_buyers .label{
+	text-align:left;
+	padding-left: 12px;
+}
+
+.stores_and_buyers .labelvalue{
+	text-align:left;	
+	
+}
